@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import HomeDropDownAdults from "./home-dropdown-adults";
 
 
 
@@ -21,6 +22,8 @@ export default function HomeHeroSection(){
   const handleDateChangeTwo = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedDateTwo(event.target.value);
   };
+
+
 
 
 
@@ -164,7 +167,7 @@ export default function HomeHeroSection(){
         <div className="sm:flex sm:items-center sm:gap-[1em] mt-[2em] sm:mt-[1em]">
 
 
-          <div className="flex flex-col w-full ">
+          {/* <div className="flex flex-col w-full ">
 
             <div className="flex items-center  justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
 
@@ -176,7 +179,13 @@ export default function HomeHeroSection(){
 
 
 
-          </div>
+          </div> */}
+
+          {/* Adults DropDown */}
+          <HomeDropDownAdults/>
+
+
+
 
 
 
