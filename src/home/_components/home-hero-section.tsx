@@ -9,7 +9,7 @@ export default function HomeHeroSection(){
   return (<>
 
 
-    <div className="flex flex-col z-10 max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green transition-all duration-1000 ease-in-out">
+    <div className="flex flex-col z-10 max-w-[1200px] lg:mx-auto px-[1.25em] my-[9em] border border-[#50B498] green transition-all duration-1000 ease-in-out">
 
 
       <div className="flex items-center border border-[#50B498] green gap-[1.875em]">
