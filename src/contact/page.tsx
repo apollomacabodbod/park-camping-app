@@ -1,5 +1,6 @@
 import { Button } from "src/components/button";
 import { motion } from "framer-motion";
+import { DatePickerCheckIn } from "../home/_components/home-date-checkin";
 
 export default function Contact() {
   return (
@@ -17,6 +18,14 @@ export default function Contact() {
           demo
         </motion.p>
       </div>
+
+      <div className="border border-[#50B498] green">
+        
+        <DatePickerCheckIn/>
+
+      </div>
+
+      
 
       <div className="flex flex-col min-h-screen bg-red-400"></div>
     </>
