@@ -2,15 +2,12 @@ import { useEffect, useRef, useState } from "react";
 
 
 
-
-
-export default function HomeDropDownChildren(){
-
+export default function HomeDropdownRooms(){
 
   // Define the type of options as a string array
-  const options: string[] = ["2 Children", "3 Children", "4 Children"];
+  const options: string[] = ["2 Rooms", "3 Rooms", "4 Rooms"];
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<string>("Children");
+  const [selectedOption, setSelectedOption] = useState<string>("Rooms");
     
   // Toggle dropdown visibility
   const toggleDropdown = () => {
@@ -40,14 +37,11 @@ export default function HomeDropDownChildren(){
   }, []);
     
     
-    
-
 
 
   return (<>
 
-
-    <div ref={dropdownRef} className="relative flex flex-col w-full z-20">
+    <div ref={dropdownRef} className="relative flex flex-col w-full z-10">
       {/* Dropdown trigger */}
       <div
         className="flex items-center justify-between border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] cursor-pointer"
@@ -81,6 +75,7 @@ export default function HomeDropDownChildren(){
         </ul>
       )}
     </div>
+    
     
     
     

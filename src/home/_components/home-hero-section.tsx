@@ -1,6 +1,7 @@
 import {  useState } from "react";
 import HomeDropDownAdults from "./home-dropdown-adults";
 import HomeDropDownChildren from "./home-dropdown-children";
+import HomeDropdownRooms from "./home-dropdown-rooms";
 
 
 
@@ -45,7 +46,7 @@ export default function HomeHeroSection(){
 
           <img src="/home-ranger-camp.svg" alt="" width={27} />
 
-          <p className="text-[#F4EEA9]  font-open-sans text-[0.9375rem] not-italic font-bold uppercase">ranger camp</p>
+          <p className="text-[#F4EEA9]  font-roboto text-[0.9375rem] not-italic font-bold uppercase">ranger camp</p>
 
           <img src="/home-ranger-camp.svg" alt="" width={27} />
 
@@ -54,7 +55,7 @@ export default function HomeHeroSection(){
         </div>
 
 
-        <p className="text-white font-montserrat text-[3.8rem] lg:text-[4.5rem] leading-[1em] font-bold ">Welcome to Ranger State Park & Lodge</p>
+        <p className="text-white font-roboto text-[3.8rem] lg:text-[4.5rem] leading-[1em] font-bold ">Welcome to Ranger State Park & Lodge</p>
 
 
 
@@ -153,45 +154,13 @@ export default function HomeHeroSection(){
 
 
 
-          {/* Adults DropDown */}
           <HomeDropDownAdults/>
 
 
-
-
-
-
-          {/* <div className="flex flex-col w-full mt-[1em] sm:mt-[0em]">
-
-            <div className="flex items-center justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
-
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Children</p>
-              <img src="/home-dropdown.svg" alt="" width={14}/>
-
-
-            </div>
-
-
-
-          </div> */}
           <HomeDropDownChildren/>
 
 
-
-
-          <div className="flex flex-col w-full mt-[1em] sm:mt-[0em]">
-
-            <div className="flex items-center justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
-
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Room</p>
-              <img src="/home-dropdown.svg" alt="" width={14}/>
-
-
-            </div>
-
-
-
-          </div>
+          <HomeDropdownRooms/>
 
 
 
