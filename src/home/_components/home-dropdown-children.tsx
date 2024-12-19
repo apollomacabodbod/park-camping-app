@@ -2,49 +2,52 @@ import { useEffect, useRef, useState } from "react";
 
 
 
-export default function HomeDropDownAdults(){
+
+
+export default function HomeDropDownChildren(){
 
 
   // Define the type of options as a string array
-  const options: string[] = ["2 Adults", "3 Adults", "4 Adults"];
+  const options: string[] = ["2 Children", "3 Children", "4 Children"];
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<string>("Adults");
-
+  const [selectedOption, setSelectedOption] = useState<string>("Children");
+    
   // Toggle dropdown visibility
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-
+    
   // Handle option selection
   const handleOptionSelect = (option: string) => {
     setSelectedOption(option);
     setIsOpen(false);
   };
-
+    
   // Close dropdown when clicking outside
   const dropdownRef = useRef<HTMLDivElement>(null);
-
+    
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
-
+    
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+    
+    
+    
 
 
 
+  return (<>
 
 
-  return(<>
-
-
-    <div ref={dropdownRef} className="relative flex flex-col w-full z-30">
+    <div ref={dropdownRef} className="relative flex flex-col w-full ">
       {/* Dropdown trigger */}
       <div
         className="flex items-center justify-between border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] cursor-pointer"
@@ -78,6 +81,7 @@ export default function HomeDropDownAdults(){
         </ul>
       )}
     </div>
+    
     
     
   </>)

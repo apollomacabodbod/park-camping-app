@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import {  useState } from "react";
 import HomeDropDownAdults from "./home-dropdown-adults";
+import HomeDropDownChildren from "./home-dropdown-children";
 
 
 
@@ -102,22 +103,6 @@ export default function HomeHeroSection(){
         <div className="lg:flex lg:items-center  lg:gap-[1.5em] xl:gap-[1em]  ">
 
 
-
-          {/* <div className="flex flex-col w-full ">
-
-            <div className="flex items-center justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
-
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Check-in</p>
-              <img src="/home-book-now.svg" alt="" width={14} className=""/>
-
-
-            </div>
-
-
-
-          </div> */}
-
-
           <div className="relative flex flex-col w-full">
             {/* Trigger div */}
             <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] ">
@@ -167,19 +152,6 @@ export default function HomeHeroSection(){
         <div className="sm:flex sm:items-center sm:gap-[1em] mt-[2em] sm:mt-[1em]">
 
 
-          {/* <div className="flex flex-col w-full ">
-
-            <div className="flex items-center  justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
-
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Adults</p>
-              <img src="/home-dropdown.svg" alt="" width={14}/>
-
-
-            </div>
-
-
-
-          </div> */}
 
           {/* Adults DropDown */}
           <HomeDropDownAdults/>
@@ -189,7 +161,7 @@ export default function HomeHeroSection(){
 
 
 
-          <div className="flex flex-col w-full mt-[1em] sm:mt-[0em]">
+          {/* <div className="flex flex-col w-full mt-[1em] sm:mt-[0em]">
 
             <div className="flex items-center justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
 
@@ -201,7 +173,8 @@ export default function HomeHeroSection(){
 
 
 
-          </div>
+          </div> */}
+          <HomeDropDownChildren/>
 
 
 
