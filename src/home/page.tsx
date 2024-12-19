@@ -5,7 +5,13 @@ export default function Home() {
 
   return (<>
 
-    <div className="relative flex flex-col bg-[#BDBDBD]  transition-all duration-1000 ease-in-out">
+    <div className="relative flex flex-col bg-[#BDBDBD]  bg-cover bg-bottom transition-all duration-1000 ease-in-out"
+    
+      style={{
+        backgroundImage: "url('/grey-lightweight-tent.jpg')"
+      }}
+    
+    >
 
 
       {/* Overlay */}
