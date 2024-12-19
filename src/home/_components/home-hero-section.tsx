@@ -128,7 +128,7 @@ export default function HomeHeroSection(){
             <input
               type="date"
               id="nativeDatePicker"
-              className="absolute inset-0 opacity-0 cursor-pointer  "
+              className="absolute inset-0 opacity-0  "
               onChange={handleDateChange}
             />
           </div>
@@ -149,7 +149,7 @@ export default function HomeHeroSection(){
             <input
               type="date"
               id="nativeDatePicker"
-              className="absolute inset-0 opacity-0 cursor-pointer  "
+              className="absolute inset-0 opacity-0   "
               onChange={handleDateChangeTwo}
             />
           </div>
@@ -184,7 +184,7 @@ export default function HomeHeroSection(){
 
             <div className="flex items-center justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
 
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Check-out</p>
+              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Children</p>
               <img src="/home-dropdown.svg" alt="" width={14}/>
 
 
@@ -201,7 +201,7 @@ export default function HomeHeroSection(){
 
             <div className="flex items-center justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
 
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Check-out</p>
+              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Room</p>
               <img src="/home-dropdown.svg" alt="" width={14}/>
 
 
