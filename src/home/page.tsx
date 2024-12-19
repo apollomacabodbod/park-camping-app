@@ -1,4 +1,6 @@
 export default function Home() {
+  
+  
   return (<>
 
     <div className="flex flex-col  bg-[rgba(16,34,29,0.60)]">
