@@ -1,31 +1,17 @@
-import {  useState } from "react";
 import HomeDropDownAdults from "./home-dropdown-adults";
 import HomeDropDownChildren from "./home-dropdown-children";
 import HomeDropdownRooms from "./home-dropdown-rooms";
 
 
 import { motion } from "framer-motion";
+import { DatePickerCheckOut } from "src/home/_components/home-date-checkout";
+import { DatePickerCheckIn } from "src/home/_components/home-date-checkin";
 
 
 
 export default function HomeHeroSection(){
 
  
-  const [selectedDate, setSelectedDate] = useState<string | null>(null);
-  const [selectedDateTwo, setSelectedDateTwo] = useState<string | null>(null);
-
-
-  const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedDate(event.target.value);
-  };
-
-
-
-  const handleDateChangeTwo = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedDateTwo(event.target.value);
-  };
-
-
 
 
 
@@ -233,20 +219,22 @@ export default function HomeHeroSection(){
           
           >
             {/* Trigger div */}
-            <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] ">
+            {/* <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] border border-[#50B498] green ">
               <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">
                 {selectedDate || "Check-in"}
               </p>
               <img src="/home-book-now.svg" alt="" width={14}  />
-            </div>
+            </div> */}
 
             {/* Native date picker */}
-            <input
+            {/* <input
               type="date"
               id="nativeDatePicker"
               className="absolute inset-0 opacity-0  "
               onChange={handleDateChange}
-            />
+            /> */}
+
+            <DatePickerCheckIn/>
           </motion.div>
 
 
@@ -269,20 +257,23 @@ export default function HomeHeroSection(){
           
           >
             {/* Trigger div */}
-            <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] ">
+            {/* <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] border border-[#50B498] green">
               <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">
                 {selectedDateTwo || "Check-out"}
               </p>
               <img src="/home-book-now.svg" alt="" width={14}  />
-            </div>
+            </div> */}
 
             {/* Native date picker */}
-            <input
+            {/* <input
               type="date"
               id="nativeDatePicker"
               className="absolute inset-0 opacity-0   "
               onChange={handleDateChangeTwo}
-            />
+            /> */}
+
+            <DatePickerCheckOut/>
+
           </motion.div>
 
 
