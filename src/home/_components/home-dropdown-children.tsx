@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
+import { motion } from "framer-motion";
 
 
 
@@ -47,7 +47,22 @@ export default function HomeDropDownChildren(){
   return (<>
 
 
-    <div ref={dropdownRef} className="relative flex flex-col w-full z-20">
+    <motion.div ref={dropdownRef} className="relative flex flex-col w-full z-20 transition-all duration-1000 ease-in-out"
+    
+    
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, y: 10 },
+        visible: { 
+          opacity: 1, 
+          y: 0,
+          transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+        },
+      }}
+    
+    >
       {/* Dropdown trigger */}
       <div
         className="flex items-center justify-between border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] cursor-pointer"
@@ -80,7 +95,7 @@ export default function HomeDropDownChildren(){
           ))}
         </ul>
       )}
-    </div>
+    </motion.div>
     
     
     

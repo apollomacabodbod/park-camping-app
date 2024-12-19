@@ -4,7 +4,7 @@ import HomeDropDownChildren from "./home-dropdown-children";
 import HomeDropdownRooms from "./home-dropdown-rooms";
 
 
-
+import { motion } from "framer-motion";
 
 
 
@@ -35,36 +35,133 @@ export default function HomeHeroSection(){
 
 
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 z-10 max-w-[1200px] lg:mx-auto px-[1.25em] my-[9em] gap-[1.875em]  border border-[#50B498] green">
+    <div className="grid grid-cols-1 lg:grid-cols-2 z-10 max-w-[1200px] lg:mx-auto px-[1.25em] my-[9em] gap-[1.875em]  ">
 
 
 
-      <div className="flex flex-col border border-[#50B498] green  " >
+      <div className="flex flex-col   " >
 
 
-        <div className="flex items-center  gap-[0.625em] border border-[#50B498] green">
+        <div className="flex items-center  gap-[0.625em] ">
 
-          <img src="/home-ranger-camp.svg" alt="" width={27} />
+          <motion.img src="/home-ranger-camp.svg" alt="" width={27}  className="transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+            
+          
+          
+          />
 
-          <p className="text-[#F4EEA9]  font-roboto text-[0.9375rem] not-italic font-bold uppercase">ranger camp</p>
+          <motion.p className="text-[#F4EEA9]  font-roboto text-[0.9375rem] not-italic font-bold uppercase transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+            
+          
+          >ranger camp</motion.p>
 
-          <img src="/home-ranger-camp.svg" alt="" width={27} />
+          <motion.img src="/home-ranger-camp.svg" alt="" width={27} className="transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+            
+          
+          />
 
 
 
         </div>
 
 
-        <p className="text-white font-roboto text-[3.8rem] lg:text-[4.5rem] leading-[1em] font-bold ">Welcome to Ranger State Park & Lodge</p>
+        <motion.p className="text-white font-roboto text-[3.8rem] lg:text-[4.5rem] leading-[1em] font-bold transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+          
+        
+        
+        >Welcome to Ranger State Park & Lodge</motion.p>
 
 
 
 
-        <p className="text-white font-inter text-[0.9375rem] not-italic font-normal my-[2em]">Nullam semper etiam congue lacinia nuncsit quam vel vestibulum faucibus dolor non semper leo quis retium quam lacus interdum ultrices velit elementum.</p>
+        <motion.p className="text-white font-inter text-[0.9375rem] not-italic font-normal my-[2em] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+          
+        
+        >Nullam semper etiam congue lacinia nuncsit quam vel vestibulum faucibus dolor non semper leo quis retium quam lacus interdum ultrices velit elementum.</motion.p>
 
 
 
-        <div className="flex items-center ">
+        <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+          
+        
+        
+        >
 
           <div className="flex flex-col border  border-[#F4EEA9] rounded-[0.25em]">
 
@@ -83,7 +180,7 @@ export default function HomeHeroSection(){
           </div>
 
 
-        </div>
+        </motion.div>
 
 
 
@@ -98,13 +195,45 @@ export default function HomeHeroSection(){
 
 
 
-      <div className="flex flex-col bg-white  lg:h-[17.875em] py-[2em] px-[2em] lg:px-[2em] mt-[2em] lg:mt-[0em] rounded-[0.25em]">
+      <motion.div className="flex flex-col bg-white  lg:h-[17.875em] py-[2em] px-[2em] lg:px-[2em] mt-[2em] lg:mt-[0em] rounded-[0.25em] transition-all duration-1000 ease-in-out"
+      
+         
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 10 },
+          visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+          },
+        }}
+      
+      
+      
+      >
 
 
         <div className="lg:flex lg:items-center  lg:gap-[1.5em] xl:gap-[1em]  ">
 
 
-          <div className="relative flex flex-col w-full">
+          <motion.div className="relative flex flex-col w-full transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+            
+          
+          >
             {/* Trigger div */}
             <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] ">
               <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">
@@ -120,12 +249,27 @@ export default function HomeHeroSection(){
               className="absolute inset-0 opacity-0  "
               onChange={handleDateChange}
             />
-          </div>
+          </motion.div>
 
 
 
 
-          <div className="relative flex flex-col w-full">
+          <motion.div className="relative flex flex-col w-full transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+            
+          
+          >
             {/* Trigger div */}
             <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] ">
               <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">
@@ -141,7 +285,7 @@ export default function HomeHeroSection(){
               className="absolute inset-0 opacity-0   "
               onChange={handleDateChangeTwo}
             />
-          </div>
+          </motion.div>
 
 
 
@@ -177,7 +321,21 @@ export default function HomeHeroSection(){
 
 
 
-        <div className="flex items-center  mt-[2em]">
+        <motion.div className="flex items-center  mt-[2em] transition-all duration-1000 ease-in-out"
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        >
 
           <div className="flex flex-col w-full   bg-[#389844] rounded-[0.25em]">
 
@@ -196,7 +354,7 @@ export default function HomeHeroSection(){
           </div>
 
 
-        </div>
+        </motion.div>
 
 
   
@@ -204,7 +362,7 @@ export default function HomeHeroSection(){
 
 
 
-      </div>
+      </motion.div>
 
 
 
