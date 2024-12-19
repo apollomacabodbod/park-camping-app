@@ -12,10 +12,10 @@ export default function HomeHeroSection(){
     <div className="flex flex-col z-10 max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green transition-all duration-1000 ease-in-out">
 
 
-      <div className="flex items-center border border-[#50B498] green">
+      <div className="flex items-center border border-[#50B498] green gap-[1.875em]">
 
 
-        <div className="flex flex-col border border-[#50B498] green">
+        <div className="flex flex-col border border-[#50B498] green max-w-[37.5em]" >
 
 
           <div className="flex items-center  gap-[0.625em] border border-[#50B498] green">
@@ -31,7 +31,7 @@ export default function HomeHeroSection(){
           </div>
 
 
-          <p className="text-white font-montserrat text-[4.5rem] leading-[1em] font-bold max-w-[37.5em]">Welcome to Ranger State Park & Lodge</p>
+          <p className="text-white font-montserrat text-[4.5rem] leading-[1em] font-bold ">Welcome to Ranger State Park & Lodge</p>
 
 
 
@@ -66,6 +66,63 @@ export default function HomeHeroSection(){
         
         
         
+        </div>
+
+
+
+
+
+        <div className="flex flex-col bg-white border border-[#50B498] green py-[2em] px-[2em]">
+
+
+          <div className="flex items-center gap-[1em]">
+
+
+
+            <div className="flex flex-col">
+
+              <div className="flex items-center justify-between border border-[#50B498] green gap-[6em] border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
+
+                <p className="whitespace-nowrap">Check-in</p>
+                <img src="/home-book-now.svg" alt="" width={14}/>
+
+
+              </div>
+
+
+
+            </div>
+
+
+
+
+            <div className="flex flex-col">
+
+              <div className="flex items-center justify-between border border-[#50B498] green gap-[6em] border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
+
+                <p className="whitespace-nowrap">Check-out</p>
+                <img src="/home-book-now.svg" alt="" width={14}/>
+
+
+              </div>
+
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+
+          
+            
+
+
+
+
         </div>
 
        
