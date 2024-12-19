@@ -5,7 +5,7 @@ export default function Home() {
 
   return (<>
 
-    <div className="relative flex flex-col bg-[#BDBDBD] max-w-[1200px] lg:mx-auto px-[1.25em] transition-all duration-1000 ease-in-out">
+    <div className="relative flex flex-col bg-[#BDBDBD]  transition-all duration-1000 ease-in-out">
 
 
       {/* Overlay */}
