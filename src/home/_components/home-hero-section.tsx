@@ -16,7 +16,7 @@ export default function HomeHeroSection(){
 
         <img src="/home-ranger-camp.svg" alt="" width={27} />
 
-        <p className="text-[#F4EEA9]">ranger camp</p>
+        <p className="text-[#F4EEA9]  font-open-sans">ranger camp</p>
 
         <img src="/home-ranger-camp.svg" alt="" width={27} />
 
