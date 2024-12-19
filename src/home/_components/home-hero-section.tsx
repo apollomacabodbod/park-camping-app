@@ -163,7 +163,7 @@ export default function HomeHeroSection(){
         
         >
 
-          <div className="flex flex-col border  border-[#F4EEA9] rounded-[0.25em]">
+          <div className="flex flex-col border  border-[#F4EEA9] cursor-pointer rounded-[0.25em] transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
 
 
             <div className="flex items-center gap-[0.625em] py-[1em] px-[2em]">
@@ -337,12 +337,12 @@ export default function HomeHeroSection(){
         
         >
 
-          <div className="flex flex-col w-full   bg-[#389844] rounded-[0.25em]">
+          <div className="flex flex-col w-full   bg-[#389844] rounded-[0.25em] cursor-pointer  transition-opacity duration-1000 ease-in-out active:scale-95 active:transition-transform active:duration-200 active:ease-out">
 
 
             <div className="flex items-center gap-[0.625em] py-[1em] px-[2em] justify-center">
 
-              <p className="font-roboto text-white text-[0.9375rem] font-bold uppercase ">Learn more</p>
+              <p className="font-roboto text-white text-[0.9375rem] font-bold uppercase ">Book now</p>
 
               <img src="/home-book-now-left.svg" alt="" width={14}/>
 
