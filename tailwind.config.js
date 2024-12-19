@@ -7,7 +7,10 @@ module.exports = {
 
 
       fontFamily: {
-        'roboto': ["Roboto", "sans-serif"]
+        'roboto': ["Roboto", "sans-serif"],
+        'open-sans': ["Open Sans", "serif"],
+         'montserrat': ["Montserrat", "serif"],
+         'inter': ["Inter", "serif"]
        },
 
 
