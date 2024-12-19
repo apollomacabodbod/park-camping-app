@@ -18,7 +18,7 @@ export default function HomeHeroSection(){
         <div className="flex flex-col border border-[#50B498] green">
 
 
-          <div className="flex items-center  gap-[0.625em]">
+          <div className="flex items-center  gap-[0.625em] border border-[#50B498] green">
 
             <img src="/home-ranger-camp.svg" alt="" width={27} />
 
@@ -36,10 +36,39 @@ export default function HomeHeroSection(){
 
 
 
-          <p className="text-white ">Nullam semper etiam congue lacinia nuncsit quam vel vestibulum faucibus dolor non semper leo quis retium quam lacus interdum ultrices velit elementum.</p>
+          <p className="text-white font-inter text-[0.9375rem] not-italic font-normal my-[2em]">Nullam semper etiam congue lacinia nuncsit quam vel vestibulum faucibus dolor non semper leo quis retium quam lacus interdum ultrices velit elementum.</p>
 
 
+
+          <div className="flex items-center ">
+
+            <div className="flex flex-col border  border-[#F4EEA9] rounded-[0.25em]">
+
+
+              <div className="flex items-center gap-[0.625em] py-[1em] px-[2em]">
+
+                <p className="font-montserrat text-[#F4EEA9] text-[0.9375rem] font-bold uppercase">Learn more</p>
+
+                <img src="/home-learn-more.svg" alt="" width={14}/>
+
+
+              </div>
+
+           
+
+            </div>
+
+  
+          </div>
+
+
+
+        
+        
+        
         </div>
+
+       
 
 
 
