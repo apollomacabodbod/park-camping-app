@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 
 
@@ -5,6 +6,25 @@
 
 
 export default function HomeHeroSection(){
+
+ 
+  const [selectedDate, setSelectedDate] = useState<string | null>(null);
+  const [selectedDateTwo, setSelectedDateTwo] = useState<string | null>(null);
+
+
+  const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedDate(event.target.value);
+  };
+
+
+
+  const handleDateChangeTwo = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedDateTwo(event.target.value);
+  };
+
+
+
+
 
   return (<>
 
@@ -76,11 +96,11 @@ export default function HomeHeroSection(){
       <div className="flex flex-col bg-white  lg:h-[17.875em] py-[2em] px-[2em] lg:px-[2em] mt-[2em] lg:mt-[0em] rounded-[0.25em]">
 
 
-        <div className="lg:flex lg:items-center  lg:gap-[1.5em] xl:gap-[1em]  border border-[#50B498] green">
+        <div className="lg:flex lg:items-center  lg:gap-[1.5em] xl:gap-[1em]  ">
 
 
 
-          <div className="flex flex-col w-full ">
+          {/* <div className="flex flex-col w-full ">
 
             <div className="flex items-center justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
 
@@ -92,25 +112,47 @@ export default function HomeHeroSection(){
 
 
 
-          </div>
+          </div> */}
 
 
-
-
-          <div className="flex flex-col w-full mt-[1em] lg:mt-[0em]">
-
-            <div className="flex items-center justify-between border border-[#50B498] green  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em]">
-
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">Check-out</p>
-              <img src="/home-book-now.svg" alt="" width={14}/>
-
-
+          <div className="relative flex flex-col w-full">
+            {/* Trigger div */}
+            <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] ">
+              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">
+                {selectedDate || "Check-in"}
+              </p>
+              <img src="/home-book-now.svg" alt="" width={14}  />
             </div>
 
-
-
+            {/* Native date picker */}
+            <input
+              type="date"
+              id="nativeDatePicker"
+              className="absolute inset-0 opacity-0 cursor-pointer  "
+              onChange={handleDateChange}
+            />
           </div>
 
+
+
+
+          <div className="relative flex flex-col w-full">
+            {/* Trigger div */}
+            <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] ">
+              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">
+                {selectedDateTwo || "Check-out"}
+              </p>
+              <img src="/home-book-now.svg" alt="" width={14}  />
+            </div>
+
+            {/* Native date picker */}
+            <input
+              type="date"
+              id="nativeDatePicker"
+              className="absolute inset-0 opacity-0 cursor-pointer  "
+              onChange={handleDateChangeTwo}
+            />
+          </div>
 
 
 
