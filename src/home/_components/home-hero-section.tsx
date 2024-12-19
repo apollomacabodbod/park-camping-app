@@ -102,7 +102,7 @@ export default function HomeHeroSection(){
         </div>
 
 
-        <motion.p className="text-white font-montserrat text-[3.8rem] mt-[0.05em] lg:text-[4.5rem] leading-[1.1em] font-bold transition-all duration-1000 ease-in-out"
+        <motion.p className="text-white font-roboto text-[3.8rem] mt-[0.05em] lg:text-[4.5rem] leading-[1em] font-bold transition-all duration-1000 ease-in-out"
         
         
           initial="hidden"
