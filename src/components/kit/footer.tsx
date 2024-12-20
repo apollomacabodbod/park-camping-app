@@ -738,7 +738,7 @@ export default function Footer(){
                   
                   >
 
-                    <input type="text" placeholder="Your email here" className="outline-none font-open-sans text-[0.9375rem] not-italic font-normal py-[1em] border-b-2  border-[#333] w-full"/>
+                    <input type="text" placeholder="Your email here" className="outline-none font-open-sans text-[0.9375rem] not-italic font-normal py-[1em] border-b-2 rounded-[0em]  border-[#333] w-full"/>
                     <button className="py-[1em] px-[2em] bg-[#389844] text-white uppercase text-[0.9375rem] font-roboto font-extrabold not-italic rounded-[0.25em] w-full">subscribe</button>
     
     
