@@ -218,21 +218,6 @@ export default function HomeHeroSection(){
             
           
           >
-            {/* Trigger div */}
-            {/* <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] border border-[#50B498] green ">
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">
-                {selectedDate || "Check-in"}
-              </p>
-              <img src="/home-book-now.svg" alt="" width={14}  />
-            </div> */}
-
-            {/* Native date picker */}
-            {/* <input
-              type="date"
-              id="nativeDatePicker"
-              className="absolute inset-0 opacity-0  "
-              onChange={handleDateChange}
-            /> */}
 
             <DatePickerCheckIn/>
           </motion.div>
@@ -256,21 +241,6 @@ export default function HomeHeroSection(){
             
           
           >
-            {/* Trigger div */}
-            {/* <div className="flex items-center justify-between  border-b-2 border-b-[rgba(16,34,29,0.60)] py-[1em] border border-[#50B498] green">
-              <p className="whitespace-nowrap text-[rgba(16,34,29,0.60)] font-open-sans text-[0.9375rem] not-italic font-normal">
-                {selectedDateTwo || "Check-out"}
-              </p>
-              <img src="/home-book-now.svg" alt="" width={14}  />
-            </div> */}
-
-            {/* Native date picker */}
-            {/* <input
-              type="date"
-              id="nativeDatePicker"
-              className="absolute inset-0 opacity-0   "
-              onChange={handleDateChangeTwo}
-            /> */}
 
             <DatePickerCheckOut/>
 
