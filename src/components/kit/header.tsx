@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Sidebar from "./side-bar-menu";
 
 
 
@@ -189,6 +190,19 @@ export default function Header(){
 
 
     </div>
+
+
+
+    {/* Overlay */}
+    {sidebarOpen && (
+      <div
+        className="fixed inset-0 bg-black opacity-50 z-40"
+        onClick={() => setSidebarOpen(false)} // Close sidebar on overlay click
+      />
+    )}
+
+    {/* Sidebar */}
+    <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
 
  
