@@ -1,3 +1,4 @@
+import HomeCampingGround from "./_components/home-camping-ground";
 import HomeHeroSection from "./_components/home-hero-section";
 import HomePlaces from "./_components/home-places";
 import HomePlacesCards from "./_components/home-places-cards";
@@ -35,6 +36,16 @@ export default function Home() {
 
       <HomePlaces/>
       <HomePlacesCards/>
+
+
+    </div>
+
+
+
+    <div className="flex flex-col  max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+
+      <HomeCampingGround/>
+     
 
 
     </div>
