@@ -1,4 +1,5 @@
 import HomeHeroSection from "./_components/home-hero-section";
+import HomePlaces from "./_components/home-places";
 
 export default function Home() {
   
@@ -24,6 +25,15 @@ export default function Home() {
 
       <img src="/home-shape.svg" alt="" className="z-10"/>
 
+
+    </div>
+
+
+
+    <div className="flex flex-col bg-white max-w-[1200px] lg:mx-auto px-[1.25em]">
+
+      <HomePlaces/>
+      
 
     </div>
 
