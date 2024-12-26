@@ -1,5 +1,6 @@
 import HomeHeroSection from "./_components/home-hero-section";
 import HomePlaces from "./_components/home-places";
+import HomePlacesCards from "./_components/home-places-cards";
 
 export default function Home() {
   
@@ -33,7 +34,8 @@ export default function Home() {
     <div className="flex flex-col bg-white max-w-[1200px] lg:mx-auto px-[1.25em]">
 
       <HomePlaces/>
-      
+      <HomePlacesCards/>
+
 
     </div>
 

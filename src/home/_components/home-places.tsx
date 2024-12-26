@@ -5,10 +5,10 @@ export default function HomePlaces(){
   return (<>
 
 
-    <div className="flex flex-col border border-[#50B498] green">
+    <div className="flex flex-col border border-[#50B498] green mt-[4.5em]">
 
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center gap-[0.625em]">
 
 
         <img src="/home-places.svg" alt="" />
