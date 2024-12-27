@@ -1,9 +1,11 @@
+import HomeAbout from "./_components/home-about";
 import HomeCampingGround from "./_components/home-camping-ground";
 import HomeFeatured from "./_components/home-featured";
 import HomeFeaturedCards from "./_components/home-featured-cards";
 import HomeHeroSection from "./_components/home-hero-section";
 import HomePlaces from "./_components/home-places";
 import HomePlacesCards from "./_components/home-places-cards";
+import HomeStats from "./_components/home-stats";
 
 export default function Home() {
   
@@ -60,6 +62,21 @@ export default function Home() {
       <HomeFeaturedCards/>
 
     </div>
+
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:mx-auto ">
+
+
+
+      <HomeAbout/>
+      <HomeStats/>
+
+
+     
+
+
+    </div>
+
 
     
     
