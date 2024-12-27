@@ -8,7 +8,7 @@ export default function HomeFeaturedCards(){
   return (<>
 
 
-    <div className="mt-[4em] grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 border border-[#50B498] green gap-[1.875em]">
+    <div className="my-[4em] grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 border border-[#50B498] green gap-[1.875em]">
 
 
       <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
