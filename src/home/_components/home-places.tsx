@@ -23,7 +23,7 @@ export default function HomePlaces(){
       <p className="text-[#333] text-center font-roboto text-[2.25rem] not-italic font-semibold ">Explore Ranger State Park</p>
 
 
-      <p className="text-[#333] font-inter text-[0.9375rem] font-normal text-center">Nullam semper etiam congue lacinia nuncesit quam vel vestibulum
+      <p className="text-[#333] font-inter text-[0.9375rem] font-normal text-center">Nullam semper etiam congue lacinia nuncesit quam vel vestibulum<br></br>
      faucibus dolor non semper leo quis pretium quam lacus.</p>
 
     </div>
