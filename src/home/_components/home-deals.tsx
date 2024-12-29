@@ -8,7 +8,7 @@ export default function HomeDeals(){
   return(<>
 
 
-    <div className="flex flex-col mt-[6.25em] border border-[#50B498] green">
+    <div className="flex flex-col mt-[6.25em] mb-[4em] border border-[#50B498] green">
 
 
 
