@@ -1,6 +1,7 @@
 import HomeAbout from "./_components/home-about";
 import HomeCampingGround from "./_components/home-camping-ground";
 import HomeDeals from "./_components/home-deals";
+import HomeDealsCards from "./_components/home-deals-cards";
 import HomeFeatured from "./_components/home-featured";
 import HomeFeaturedCards from "./_components/home-featured-cards";
 import HomeHeroSection from "./_components/home-hero-section";
@@ -87,6 +88,7 @@ export default function Home() {
       <HomeRecognitions/>
       <HomeRecognitionsCards/>
       <HomeDeals/>
+      <HomeDealsCards/>
 
 
     </div>
