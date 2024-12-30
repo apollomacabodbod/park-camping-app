@@ -1,4 +1,6 @@
 import HomeAbout from "./_components/home-about";
+import HomeActivities from "./_components/home-activities";
+import HomeActivtiesVideo from "./_components/home-activities-video";
 import HomeCampingGround from "./_components/home-camping-ground";
 import HomeDeals from "./_components/home-deals";
 import HomeDealsCards from "./_components/home-deals-cards";
@@ -89,6 +91,8 @@ export default function Home() {
       <HomeRecognitionsCards/>
       <HomeDeals/>
       <HomeDealsCards/>
+      <HomeActivities/>
+      <HomeActivtiesVideo/>
 
 
     </div>
