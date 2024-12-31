@@ -8,7 +8,7 @@ export default function HomeDealsCards(){
   return (<>
 
 
-    <div className="grid grid-cols-1  lg:grid-cols-3 border border-[#50B498] green gap-[1.875em] mb-[6.25em]">
+    <div className="grid grid-cols-1  lg:grid-cols-3  gap-[1.875em] mb-[6.25em]">
 
 
       <div className="flex flex-col border border-[#50B498] green">
