@@ -9,11 +9,11 @@ export default function HomeServicesCards(){
 
 
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-[4em] gap-[1.875em]">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-[4em] gap-[1.875em] mb-[8.6875em]">
 
 
 
-      <div className="relative flex flex-col  bg-center bg-cover bg-no-repeat w-full h-[15em] border border-[#50B498] green"
+      <div className="relative flex flex-col  bg-center bg-cover bg-no-repeat w-full h-[15em] rounded-[0.375em] border border-[#50B498] green"
 
             
         style={{
@@ -48,7 +48,7 @@ export default function HomeServicesCards(){
 
 
 
-      <div className="relative flex flex-col  bg-center bg-cover bg-no-repeat w-full h-[15em] border border-[#50B498] green"
+      <div className="relative flex flex-col  bg-center bg-cover bg-no-repeat w-full h-[15em] rounded-[0.375em] border border-[#50B498] green"
 
             
         style={{
@@ -84,7 +84,7 @@ export default function HomeServicesCards(){
 
 
 
-      <div className="relative flex flex-col  bg-center bg-cover bg-no-repeat w-full h-[15em] border border-[#50B498] green"
+      <div className="relative flex flex-col  bg-center bg-cover bg-no-repeat w-full h-[15em] rounded-[0.375em] border border-[#50B498] green"
 
             
         style={{
@@ -119,7 +119,7 @@ export default function HomeServicesCards(){
 
 
 
-      <div className="relative flex flex-col  bg-center bg-cover bg-no-repeat w-full h-[15em] border border-[#50B498] green"
+      <div className="relative flex flex-col  bg-center bg-cover bg-no-repeat w-full h-[15em] rounded-[0.375em] border border-[#50B498] green"
 
             
         style={{
