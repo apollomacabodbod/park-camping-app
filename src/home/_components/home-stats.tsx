@@ -7,7 +7,7 @@ export default function HomeStats(){
   return(<>
 
 
-    <div className="flex flex-col bg-[rgba(56,152,68,0.90)] pt-[5em] lg:pt-[9.095em] pb-[9.905em]  px-[1.25em] lg:pl-[4em] lg:pr-[10em]  max-w-[1200px]   border border-[#50B498] green">
+    <div className="flex flex-col bg-[rgba(56,152,68,0.90)] pt-[5em] lg:pt-[9.095em] pb-[9.905em]  px-[1.25em] lg:pl-[4em] lg:pr-[10em]  max-w-[1200px]   ">
 
 
 
@@ -76,9 +76,42 @@ export default function HomeStats(){
 
 
 
-        <p className="text-white font-roboto text-[2.25rem] not-italic font-semibold ">Ranger State Park in Stats</p>
+        <motion.p className="text-white font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
 
-        <p className="text-white font-inter text-[0.9375rem] not-italic font-normal ">Nullam semper etiam congue lacinia nunc, sit. Quam vel vestibulum faucibus dolor non semper leo quis.</p>
+        
+        >Ranger State Park in Stats</motion.p>
+
+        <motion.p className="text-white font-inter text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out"
+        
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >Nullam semper etiam congue lacinia nunc, sit. Quam vel vestibulum faucibus dolor non semper leo quis.</motion.p>
 
     
 
@@ -88,47 +121,248 @@ export default function HomeStats(){
 
       <div className="grid grid-cols-1 sm:grid-cols-2 mt-[1.875em] gap-[1.875em]">
 
-        <div className="flex flex-col py-[1em] px-[1em] bg-white rounded-[0.25em]">
+        <motion.div className="flex flex-col py-[1em] px-[1em] bg-white rounded-[0.25em] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        
+        >
 
-          <p className="text-center font-roboto text-[2.25rem] not-italic font-semibold ">105+</p> 
+          <motion.p className="text-center font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >105+</motion.p> 
 
-          <p className="text-center font-roboto text-[0.75rem] font-normal leading-normal text-[rgba(16,34,29,0.60)]">Campsites</p>
+          <motion.p className="text-center font-roboto text-[0.75rem] font-normal leading-normal text-[rgba(16,34,29,0.60)] transition-all duration-1000 ease-in-out"
+          
+          
+            
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Campsites</motion.p>
 
 
-        </div>
+        </motion.div>
 
 
-        <div className="flex flex-col py-[1em] px-[1em] bg-white rounded-[0.25em]">
+        <motion.div className="flex flex-col py-[1em] px-[1em] bg-white rounded-[0.25em] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >
 
-          <p className="text-center font-roboto text-[2.25rem] not-italic font-semibold ">30+</p> 
+          <motion.p className="text-center font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >30+</motion.p> 
 
-          <p className="text-center font-roboto text-[0.75rem] font-normal leading-normal text-[rgba(16,34,29,0.60)]">Campsites</p>
+          <motion.p className="text-center font-roboto text-[0.75rem] font-normal leading-normal text-[rgba(16,34,29,0.60)] transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >Campsites</motion.p>
 
 
-        </div>
+        </motion.div>
 
 
 
-        <div className="flex flex-col py-[1em] px-[1em] bg-white rounded-[0.25em]">
+        <motion.div className="flex flex-col py-[1em] px-[1em] bg-white rounded-[0.25em] transition-all duration-1000 ease-in-out" 
+        
+        
+          
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >
 
-          <p className="text-center font-roboto text-[2.25rem] not-italic font-semibold ">1,3M</p> 
+          <motion.p className="text-center font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+          
+          
+          
+             
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+        
+          
+          >1,3M</motion.p> 
 
-          <p className="text-center font-roboto text-[0.75rem] font-normal leading-normal text-[rgba(16,34,29,0.60)]">Reservations</p>
+          <motion.p className="text-center font-roboto text-[0.75rem] font-normal leading-normal text-[rgba(16,34,29,0.60)] transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          >Reservations</motion.p>
 
 
-        </div>
+        </motion.div>
 
 
 
 
-        <div className="flex flex-col py-[1em] px-[1em] bg-white rounded-[0.25em]">
+        <motion.div className="flex flex-col py-[1em] px-[1em] bg-white rounded-[0.25em] transition-all duration-1000 ease-in-out"
+        
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >
 
-          <p className="text-center font-roboto text-[2.25rem] not-italic font-semibold ">70+</p> 
+          <motion.p className="text-center font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >70+</motion.p> 
 
-          <p className="text-center font-roboto text-[0.75rem] font-normal leading-normal text-[rgba(16,34,29,0.60)]">Year of camping</p>
+          <motion.p className="text-center font-roboto text-[0.75rem] font-normal leading-normal text-[rgba(16,34,29,0.60)] transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          >Year of camping</motion.p>
 
 
-        </div>
+        </motion.div>
 
 
 

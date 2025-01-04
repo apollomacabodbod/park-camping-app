@@ -1,5 +1,5 @@
 
-
+import { motion } from "framer-motion"
 
 
 export default function HomeRecognitionsCards(){
@@ -11,18 +11,50 @@ export default function HomeRecognitionsCards(){
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1em] mt-[2.125em]" >
 
 
-      <div className="flex flex-col border border-[#50B498] green">
+      <div className="flex flex-col ">
 
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >
 
           <img src="/home-recognition-card1.svg" alt="" />
 
 
-        </div>
+        </motion.div>
 
 
-        <p className="text-center mt-[1em] font-roboto text-[0.9375rem] not-italic font-normal text-[#333]">Best Camping Spot</p>
+        <motion.p className="text-center mt-[1em] font-roboto text-[0.9375rem] not-italic font-normal text-[#333] transition-all duration-1000 ease-in-out"
+        
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >Best Camping Spot</motion.p>
 
 
       </div>
@@ -30,36 +62,101 @@ export default function HomeRecognitionsCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green">
+      <div className="flex flex-col ">
 
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        
+        >
 
           <img src="/home-recognition-card2.svg" alt="" />
 
 
-        </div>
+        </motion.div>
 
 
-        <p className="text-center mt-[1em] font-roboto text-[0.9375rem] not-italic font-normal text-[#333]">Innovative State Park</p>
+        <motion.p className="text-center mt-[1em] font-roboto text-[0.9375rem] not-italic font-normal text-[#333] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >Innovative State Park</motion.p>
 
 
       </div>
 
 
 
-      <div className="flex flex-col border border-[#50B498] green">
+      <div className="flex flex-col ">
 
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >
 
           <img src="/home-recognition-card3.svg" alt="" />
 
 
-        </div>
+        </motion.div>
 
 
-        <p className="text-center mt-[1em] font-roboto text-[0.9375rem] not-italic font-normal text-[#333]">Top 5 Urban Camp</p>
+        <motion.p className="text-center mt-[1em] font-roboto text-[0.9375rem] not-italic font-normal text-[#333] transition-all duration-1000 ease-in-out"
+        
+        
+          
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >Top 5 Urban Camp</motion.p>
 
 
       </div>
@@ -67,18 +164,50 @@ export default function HomeRecognitionsCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green">
+      <div className="flex flex-col ">
 
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+        
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        >
 
           <img src="/home-recognition-card4.svg" alt="" />
 
 
-        </div>
+        </motion.div>
 
 
-        <p className="text-center mt-[1em] font-roboto text-[0.9375rem] not-italic font-normal text-[#333]">Vote best staycation</p>
+        <motion.p className="text-center mt-[1em] font-roboto text-[0.9375rem] not-italic font-normal text-[#333] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >Vote best staycation</motion.p>
 
 
       </div>

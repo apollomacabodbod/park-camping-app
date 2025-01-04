@@ -58,7 +58,7 @@ export default function Home() {
 
 
 
-    <div className="flex flex-col  max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+    <div className="flex flex-col  max-w-[1200px] lg:mx-auto px-[1.25em] ">
 
       <HomeCampingGround/>
      
@@ -67,7 +67,7 @@ export default function Home() {
     </div>
 
 
-    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] ">
 
 
       <HomeFeatured/>
@@ -91,7 +91,7 @@ export default function Home() {
 
 
 
-    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] ">
 
       <HomeRecognitions/>
       <HomeRecognitionsCards/>

@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion"
 
 
 export default function HomeFeatured(){
@@ -7,9 +7,25 @@ export default function HomeFeatured(){
   return(<>
 
 
-    <div className="flex flex-col mt-[6.25em] border border-[#50B498] green">
+    <div className="flex flex-col mt-[6.25em] ">
 
-      <div className="flex items-center justify-center gap-[0.625em]">
+      <motion.div className="flex items-center justify-center gap-[0.625em] transition-all duration-1000 ease-in-out"
+      
+      
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 10 },
+          visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+          },
+        }}
+      
+      
+      >
 
 
         <img src="/home-places.svg" alt="" />
@@ -19,14 +35,45 @@ export default function HomeFeatured(){
         <img src="/home-places.svg" alt="" />
 
 
-      </div>
+      </motion.div>
 
 
-      <p className="text-[#333] text-center font-roboto text-[2.25rem] not-italic font-semibold ">Camp Infrastructures</p>
+      <motion.p className="text-[#333] text-center font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+      
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 10 },
+          visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+          },
+        }}
+      
+      
+      >Camp Infrastructures</motion.p>
 
 
-      <p className="text-[#333] font-inter text-[0.9375rem] font-normal text-center">Nullam semper etiam congue lacinia nuncesit quam vel vestibulum<br></br>
-faucibus dolor non semper leo quis pretium quam lacus.</p>
+      <motion.p className="text-[#333] font-inter text-[0.9375rem] font-normal text-center transition-all duration-1000 ease-in-out"
+      
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 10 },
+          visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+          },
+        }}
+      
+      
+      
+      >Nullam semper etiam congue lacinia nuncesit quam vel vestibulum<br></br>
+faucibus dolor non semper leo quis pretium quam lacus.</motion.p>
 
 
 

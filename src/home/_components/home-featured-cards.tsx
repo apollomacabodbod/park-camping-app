@@ -1,6 +1,6 @@
 
 
-
+import { motion } from "framer-motion"
 
 export default function HomeFeaturedCards(){
 
@@ -8,12 +8,27 @@ export default function HomeFeaturedCards(){
   return (<>
 
 
-    <div className="my-[4em] grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 border border-[#50B498] green gap-[1.875em]">
+    <div className="my-[4em] grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  gap-[1.875em]">
 
 
-      <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
+      <div className="flex flex-col  py-[1em] px-[1em]">
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >
 
           <div className="bg-[#F4EEA9] w-16 h-16 rounded-full relative">
 
@@ -23,12 +38,42 @@ export default function HomeFeaturedCards(){
 
                
 
-        </div>
+        </motion.div>
 
 
-        <p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em]">Breakfast Included</p>
+        <motion.p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        >Breakfast Included</motion.p>
 
-        <p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal ">Nullam semper etiam congue lacinia nuncsit quam vesti.</p>
+        <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        >Nullam semper etiam congue lacinia nuncsit quam vesti.</motion.p>
 
       </div>
 
@@ -36,9 +81,24 @@ export default function HomeFeaturedCards(){
         
         
         
-      <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
+      <div className="flex flex-col  py-[1em] px-[1em]">
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+
+        >
 
           <div className="bg-[#F4EEA9] w-16 h-16 rounded-full relative">
 
@@ -46,22 +106,69 @@ export default function HomeFeaturedCards(){
 
           </div>
 
-   
+       
 
-        </div>
+        </motion.div>
 
 
-        <p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em]">Free Parking</p>
+        <motion.p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em] transition-all duration-1000 ease-in-out"
 
-        <p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal ">Nullam semper etiam congue lacinia nuncsit quam vesti.</p>
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Breakfast Included</motion.p>
+
+        <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
+
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Nullam semper etiam congue lacinia nuncsit quam vesti.</motion.p>
 
       </div>
 
 
 
-      <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
 
-        <div className="flex items-center justify-center">
+           
+      <div className="flex flex-col  py-[1em] px-[1em]">
+
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+
+        >
 
           <div className="bg-[#F4EEA9] w-16 h-16 rounded-full relative">
 
@@ -69,14 +176,44 @@ export default function HomeFeaturedCards(){
 
           </div>
 
-   
+       
 
-        </div>
+        </motion.div>
 
 
-        <p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em]">Toilets</p>
+        <motion.p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em] transition-all duration-1000 ease-in-out"
 
-        <p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal ">Nullam semper etiam congue lacinia nuncsit quam vesti.</p>
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Breakfast Included</motion.p>
+
+        <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
+
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Nullam semper etiam congue lacinia nuncsit quam vesti.</motion.p>
 
       </div>
 
@@ -84,9 +221,26 @@ export default function HomeFeaturedCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
 
-        <div className="flex items-center justify-center">
+
+      <div className="flex flex-col  py-[1em] px-[1em]">
+
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+
+        >
 
           <div className="bg-[#F4EEA9] w-16 h-16 rounded-full relative">
 
@@ -94,23 +248,69 @@ export default function HomeFeaturedCards(){
 
           </div>
 
-   
+       
 
-        </div>
+        </motion.div>
 
 
-        <p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em]">Washing Machines</p>
+        <motion.p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em] transition-all duration-1000 ease-in-out"
 
-        <p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal ">Nullam semper etiam congue lacinia nuncsit quam vesti.</p>
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Breakfast Included</motion.p>
+
+        <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
+
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Nullam semper etiam congue lacinia nuncsit quam vesti.</motion.p>
 
       </div>
 
 
 
 
-      <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
 
-        <div className="flex items-center justify-center">
+      <div className="flex flex-col  py-[1em] px-[1em]">
+
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+
+        >
 
           <div className="bg-[#F4EEA9] w-16 h-16 rounded-full relative">
 
@@ -118,23 +318,68 @@ export default function HomeFeaturedCards(){
 
           </div>
 
-   
+       
 
-        </div>
+        </motion.div>
 
 
-        <p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em]">24 Services</p>
+        <motion.p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em] transition-all duration-1000 ease-in-out"
 
-        <p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal ">Nullam semper etiam congue lacinia nuncsit quam vesti.</p>
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Breakfast Included</motion.p>
+
+        <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
+
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Nullam semper etiam congue lacinia nuncsit quam vesti.</motion.p>
 
       </div>
 
 
 
 
-      <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
+      <div className="flex flex-col  py-[1em] px-[1em]">
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+
+        >
 
           <div className="bg-[#F4EEA9] w-16 h-16 rounded-full relative">
 
@@ -142,23 +387,68 @@ export default function HomeFeaturedCards(){
 
           </div>
 
-   
+       
 
-        </div>
+        </motion.div>
 
 
-        <p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em]">Security</p>
+        <motion.p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em] transition-all duration-1000 ease-in-out"
 
-        <p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal ">Nullam semper etiam congue lacinia nuncsit quam vesti.</p>
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Breakfast Included</motion.p>
+
+        <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
+
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Nullam semper etiam congue lacinia nuncsit quam vesti.</motion.p>
 
       </div>
 
 
 
 
-      <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
+      <div className="flex flex-col py-[1em] px-[1em]">
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+
+        >
 
           <div className="bg-[#F4EEA9] w-16 h-16 rounded-full relative">
 
@@ -166,23 +456,68 @@ export default function HomeFeaturedCards(){
 
           </div>
 
-   
+       
 
-        </div>
+        </motion.div>
 
 
-        <p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em]">Gym</p>
+        <motion.p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em] transition-all duration-1000 ease-in-out"
 
-        <p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal ">Nullam semper etiam congue lacinia nuncsit quam vesti.</p>
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Breakfast Included</motion.p>
+
+        <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
+
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Nullam semper etiam congue lacinia nuncsit quam vesti.</motion.p>
 
       </div>
 
 
 
 
-      <div className="flex flex-col border border-[#50B498] green py-[1em] px-[1em]">
+      <div className="flex flex-col py-[1em] px-[1em]">
 
-        <div className="flex items-center justify-center">
+        <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+
+        >
 
           <div className="bg-[#F4EEA9] w-16 h-16 rounded-full relative">
 
@@ -190,14 +525,44 @@ export default function HomeFeaturedCards(){
 
           </div>
 
-   
+       
 
-        </div>
+        </motion.div>
 
 
-        <p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em]">Firefighter</p>
+        <motion.p className="font-roboto text-[1.125rem] not-italic font-semibold text-[#333] text-center mt-[1em] transition-all duration-1000 ease-in-out"
 
-        <p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal ">Nullam semper etiam congue lacinia nuncsit quam vesti.</p>
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Breakfast Included</motion.p>
+
+        <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
+
+
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+
+        >Nullam semper etiam congue lacinia nuncsit quam vesti.</motion.p>
 
       </div>
 
