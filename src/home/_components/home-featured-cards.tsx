@@ -126,7 +126,7 @@ export default function HomeFeaturedCards(){
             },
           }}
 
-        >Breakfast Included</motion.p>
+        >Free Parking</motion.p>
 
         <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
 
@@ -196,7 +196,7 @@ export default function HomeFeaturedCards(){
             },
           }}
 
-        >Breakfast Included</motion.p>
+        >Toilets</motion.p>
 
         <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
 
@@ -268,7 +268,7 @@ export default function HomeFeaturedCards(){
             },
           }}
 
-        >Breakfast Included</motion.p>
+        >Washing Machines</motion.p>
 
         <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
 
@@ -338,7 +338,7 @@ export default function HomeFeaturedCards(){
             },
           }}
 
-        >Breakfast Included</motion.p>
+        >24 Services</motion.p>
 
         <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
 
@@ -407,7 +407,7 @@ export default function HomeFeaturedCards(){
             },
           }}
 
-        >Breakfast Included</motion.p>
+        >Security</motion.p>
 
         <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
 
@@ -476,7 +476,7 @@ export default function HomeFeaturedCards(){
             },
           }}
 
-        >Breakfast Included</motion.p>
+        >Gym</motion.p>
 
         <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
 
@@ -545,7 +545,7 @@ export default function HomeFeaturedCards(){
             },
           }}
 
-        >Breakfast Included</motion.p>
+        >Firefighter</motion.p>
 
         <motion.p className="mt-[1em] text-[#333] font-inter text-[0.9375rem] text-center font-normal transiton-all duration-1000 ease-in-out"
 
