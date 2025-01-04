@@ -17,6 +17,7 @@ import HomeStats from "./_components/home-stats";
 import HomeTestimontials from "./_components/home-testimontials";
 import HomeTestimontialsCards from "./_components/home-testimontials-cards";
 import HomeUpdates from "./_components/home-updates";
+import HomeUpdatesCards from "./_components/home-updates-card";
 
 export default function Home() {
   
@@ -103,7 +104,7 @@ export default function Home() {
       <HomeTestimontials/>
       <HomeTestimontialsCards/>
       <HomeUpdates/>
-
+      <HomeUpdatesCards/>
 
     </div>
 
