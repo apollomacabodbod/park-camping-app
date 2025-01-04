@@ -15,7 +15,7 @@ export default function HomeActivtiesVideo(){
 
 
         <ReactPlayer
-          url={'https://www.youtube.com/watch?v=e1KK82lgpN0'}
+          url={'https://www.youtube.com/watch?v=Bp-27oOhulg'}
           playing
           loop
           muted
