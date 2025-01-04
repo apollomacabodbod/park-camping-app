@@ -14,6 +14,7 @@ import HomeRecognitionsCards from "./_components/home-recognitions-cards";
 import HomeServices from "./_components/home-services";
 import HomeServicesCards from "./_components/home-services-cards";
 import HomeStats from "./_components/home-stats";
+import HomeTestimontials from "./_components/home-testimontials";
 
 export default function Home() {
   
@@ -97,6 +98,7 @@ export default function Home() {
       <HomeActivtiesVideo/>
       <HomeServices/>
       <HomeServicesCards/>
+      <HomeTestimontials/>
 
 
     </div>
