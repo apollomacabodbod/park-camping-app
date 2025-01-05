@@ -1,5 +1,6 @@
 import ServicesHeroSection from "./_components/services-hero-section";
 import ServicesOurStaff from "./_components/services-our-staff";
+import ServicesStaffCards from "./_components/services-staff-cards";
 import ServicesTeam from "./_components/services-team";
 
 
@@ -39,6 +40,7 @@ export default function ServicesStaff(){
 
       <ServicesTeam/>
       <ServicesOurStaff/>
+      <ServicesStaffCards/>
 
     </div>
     
