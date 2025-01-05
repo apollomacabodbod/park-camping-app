@@ -117,7 +117,7 @@ export default function ServicesTeam(){
           
           >
 
-            <img src="/handsome-businessman.jpg" alt="" className="w-full h-[17.5em] object-cover "/>
+            <img src="/handsome-businessman.jpg" alt="" className="w-full h-[17.5em] object-cover rounded-[0.25em]"/>
 
           </motion.div>
 
@@ -189,7 +189,7 @@ export default function ServicesTeam(){
           
           >
 
-            <img src="/businesswoman-sitting.jpg" alt="" className="w-full h-[17.5em] object-cover object-top "/>
+            <img src="/businesswoman-sitting.jpg" alt="" className="w-full h-[17.5em] object-cover object-top rounded-[0.25em]"/>
 
           </motion.div>
 
