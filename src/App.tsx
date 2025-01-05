@@ -6,6 +6,7 @@ import Footer from "./components/kit/footer";
 import Header from "./components/kit/header";
 import ServicesStaff from "./staff/page";
 import ScrollToTop from "./components/kit/scroll-top";
+import Camping from "./camping/page";
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesStaff />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/camping" element={<Camping />} />
       </Routes>
 
 
