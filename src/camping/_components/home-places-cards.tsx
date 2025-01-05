@@ -6,7 +6,7 @@ export default function CampingPlacesCards(){
   return(<>
 
 
-    <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-[1.875em]  mt-[4em] mb-[7.625em] border border-[#50B498] green">
+    <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-[1.875em]  mt-[4em]  border border-[#50B498] green">
 
 
       <div className="flex flex-col ">
