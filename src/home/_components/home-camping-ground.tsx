@@ -8,7 +8,7 @@ export default function HomeCampingGround(){
   return (<>
 
 
-    <div className="relative flex flex-col bg-cover bg-center  mt-[7.625em] pt-[5.0625em] pb-[5.5625em] pl-[2em] pr-[2em] lg:pl-[3.875em] lg:pr-[4.1875em] rounded-[0.25em]"
+    <div className="relative flex flex-col bg-cover bg-center  mt-[7.625em] pt-[5.0625em] pb-[5.5625em] pl-[2em] pr-[2em] lg:pl-[3.875em] lg:pr-[4.1875em] rounded-[0.25em] overflow-hidden"
     
     
       style={{
