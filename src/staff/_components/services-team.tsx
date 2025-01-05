@@ -7,13 +7,13 @@ export default function ServicesTeam(){
 
 
 
-    <div className="grid grid-cols-1 md:grid-cols-2 border border-[#50B498] green gap-[4em] my-[5em]">
+    <div className="grid grid-cols-1 md:grid-cols-2  gap-[4em] my-[5em]">
 
 
-      <div className="flex flex-col border border-[#50B498] green py-[5.9375em]">
+      <div className="flex flex-col  py-[5.9375em]">
 
 
-        <motion.div className="flex items-center  gap-[0.625em] transition-all duration-1000 ease-in-out border border-[#50B498] green"
+        <motion.div className="flex items-center  gap-[0.625em] transition-all duration-1000 ease-in-out "
       
       
           initial="hidden"
@@ -44,7 +44,7 @@ export default function ServicesTeam(){
 
 
 
-        <motion.p className="text-[#333]  font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out border border-[#50B498] green"
+        <motion.p className="text-[#333]  font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out "
       
           initial="hidden"
           whileInView="visible"
@@ -91,14 +91,14 @@ export default function ServicesTeam(){
 
 
 
-      <div className="grid grid-cols-2 border border-[#50B498] green gap-[1.875em]">
+      <div className="grid grid-cols-2  gap-[1.875em]">
 
 
 
-        <div className="flex flex-col border border-[#50B498] green">
+        <div className="flex flex-col ">
 
 
-          <motion.div className="flex items-center border border-[#50B498] green transition-alll duration-1000 ease-in-out"
+          <motion.div className="flex items-center  transition-alll duration-1000 ease-in-out"
           
           
             initial="hidden"
@@ -168,10 +168,10 @@ export default function ServicesTeam(){
 
 
 
-        <div className="flex flex-col border border-[#50B498] green">
+        <div className="flex flex-col ">
 
 
-          <motion.div className="flex items-center border border-[#50B498] green transition-all duration-1000 ease-in-out"
+          <motion.div className="flex items-center  transition-all duration-1000 ease-in-out"
           
           
             initial="hidden"

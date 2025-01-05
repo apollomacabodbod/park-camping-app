@@ -8,7 +8,7 @@ export default function ServicesOurStaff(){
 
     <div className="flex flex-col">
 
-      <motion.div className="flex items-center justify-center gap-[0.625em] transition-all duration-1000 ease-in-out border border-[#50B498] green"
+      <motion.div className="flex items-center justify-center gap-[0.625em] transition-all duration-1000 ease-in-out "
       
       
         initial="hidden"
@@ -37,7 +37,7 @@ export default function ServicesOurStaff(){
       </motion.div>
 
 
-      <motion.p className="text-[#333]  font-roboto text-center text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out border border-[#50B498] green"
+      <motion.p className="text-[#333]  font-roboto text-center text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out "
       
         initial="hidden"
         whileInView="visible"

@@ -36,7 +36,7 @@ export default function ServicesStaff(){
 
 
 
-    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] ">
 
       <ServicesTeam/>
       <ServicesOurStaff/>

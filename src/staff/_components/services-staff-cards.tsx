@@ -9,9 +9,9 @@ export default function ServicesStaffCards(){
   return (<>
 
 
-    <div className="grid grid-cols-1 sm:grid-cols-2   custom-853:grid-cols-2 custom-820:grid-cols-2 custom-768:grid-cols-2 lg:grid-cols-4  border border-[#50B498] green gap-[1.875em] my-[3.99625em]">
+    <div className="grid grid-cols-1 sm:grid-cols-2   custom-853:grid-cols-2 custom-820:grid-cols-2 custom-768:grid-cols-2 lg:grid-cols-4   gap-[1.875em] my-[3.99625em]">
 
-      <div className="flex flex-col border border-[#50B498] green pb-[1.875em]">
+      <div className="flex flex-col  pb-[1.875em]">
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
         
@@ -82,7 +82,7 @@ export default function ServicesStaffCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green pt-[1.875em]">
+      <div className="flex flex-col  pt-[1.875em]">
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
         
@@ -153,7 +153,7 @@ export default function ServicesStaffCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green pb-[1.875em]">
+      <div className="flex flex-col  pb-[1.875em]">
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
         
@@ -226,7 +226,7 @@ export default function ServicesStaffCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green pt-[1.875em]">
+      <div className="flex flex-col  pt-[1.875em]">
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
         
@@ -299,7 +299,7 @@ export default function ServicesStaffCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green pb-[1.875em]">
+      <div className="flex flex-col  pb-[1.875em]">
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
         
@@ -372,7 +372,7 @@ export default function ServicesStaffCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green pt-[1.875em]">
+      <div className="flex flex-col  pt-[1.875em]">
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
         
@@ -445,7 +445,7 @@ export default function ServicesStaffCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green pb-[1.875em]">
+      <div className="flex flex-col  pb-[1.875em]">
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
         
@@ -521,7 +521,7 @@ export default function ServicesStaffCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green pt-[1.875em]">
+      <div className="flex flex-col  pt-[1.875em]">
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
         

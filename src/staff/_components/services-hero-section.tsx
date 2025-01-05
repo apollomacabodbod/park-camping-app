@@ -9,7 +9,7 @@ export default function ServicesHeroSection(){
   return(<>
 
 
-    <div className="z-10 flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] my-[9em] border border-[#50B498] green">
+    <div className="z-10 flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] my-[9em] ">
 
       <div className="flex items-baseline  gap-[0.625em] ">
 
