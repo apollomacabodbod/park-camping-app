@@ -1,4 +1,5 @@
 import ServicesHeroSection from "./_components/services-hero-section";
+import ServicesTeam from "./_components/services-team";
 
 
 
@@ -29,6 +30,14 @@ export default function ServicesStaff(){
       <img src="/home-shape.svg" alt="" className="z-10"/>
    
    
+    </div>
+
+
+
+    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+
+      <ServicesTeam/>
+
     </div>
     
     
