@@ -8,7 +8,7 @@ export default function HomeCampingLearn(){
 
 
 
-    <div className="flex flex-col">
+    <div className="z-10 flex flex-col">
 
 
       <div className="lg:flex lg:items-center lg:justify-between">
