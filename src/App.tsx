@@ -5,6 +5,7 @@ import { LenisProvider } from "./context/smooth-scroll";
 import Footer from "./components/kit/footer";
 import Header from "./components/kit/header";
 import ServicesStaff from "./staff/page";
+import ScrollToTop from "./components/kit/scroll-top";
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
 
 
     <LenisProvider>
+
+      <ScrollToTop/>
 
 
       <Header/>
