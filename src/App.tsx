@@ -1,32 +1,42 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route , useLocation} from "react-router-dom";
 import Home from "./home/page";
-import About from "./about/page";
 import Contact from "./contact/page";
 import { LenisProvider } from "./context/smooth-scroll";
 import Footer from "./components/kit/footer";
 import Header from "./components/kit/header";
+import ServicesStaff from "./staff/page";
 
 function App() {
+
+
+  const location = useLocation(); // Now safe to use because it's inside a Router
+
+
+
   return (
 
 
     <LenisProvider>
 
-      <Router>
 
-        <Header/>
+      <Header/>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<ServicesStaff />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+
+      <div key={location.pathname}>
 
         <Footer/>
+        
+      </div>
+
+       
 
 
-      </Router>
     </LenisProvider>
    
 
