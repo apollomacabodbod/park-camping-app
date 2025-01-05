@@ -16,7 +16,7 @@ export default function ServicesStaffCards(){
         <div className="flex items-center">
 
 
-          <img src="/man-sitting.JPG" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] w-full rounded-[0.25em] object-top"/>
+          <img src="/man-sitting.JPG" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] custom-412:h-[25em]  w-full rounded-[0.25em] object-top custom-512:h-[25em]"/>
 
 
 
@@ -38,7 +38,7 @@ export default function ServicesStaffCards(){
         <div className="flex items-center">
 
 
-          <img src="/confident-businesswoman.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] w-full rounded-[0.25em] object-top md:object-center "/>
+          <img src="/confident-businesswoman.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] custom-512:h-[25em] custom-412:h-[25em] w-full rounded-[0.25em] object-top md:object-center custom-870:object-top"/>
 
 
 
@@ -60,7 +60,7 @@ export default function ServicesStaffCards(){
         <div className="flex items-center">
 
 
-          <img src="/serious-professional.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] w-full rounded-[0.25em]"/>
+          <img src="/serious-professional.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] custom-512:h-[25em] custom-412:h-[25em] w-full rounded-[0.25em]"/>
 
 
 
@@ -83,7 +83,7 @@ export default function ServicesStaffCards(){
         <div className="flex items-center">
 
 
-          <img src="/professional-female.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] w-full rounded-[0.25em]   object-left"/>
+          <img src="/professional-female.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] custom-512:h-[25em] custom-412:h-[25em] w-full rounded-[0.25em]   object-left"/>
 
 
 
@@ -106,7 +106,7 @@ export default function ServicesStaffCards(){
         <div className="flex items-center">
 
 
-          <img src="/confident-business.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] w-full rounded-[0.25em]"/>
+          <img src="/confident-business.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] custom-512:h-[25em] custom-412:h-[25em] w-full rounded-[0.25em] custom-512:object-top custom-545:object-center"/>
 
 
 
@@ -128,7 +128,7 @@ export default function ServicesStaffCards(){
         <div className="flex items-center">
 
 
-          <img src="/busy-confident.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] w-full rounded-[0.25em] object-left"/>
+          <img src="/busy-confident.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] custom-512:h-[25em] custom-412:h-[25em] w-full rounded-[0.25em] object-left"/>
 
 
 
@@ -150,7 +150,7 @@ export default function ServicesStaffCards(){
         <div className="flex items-center">
 
 
-          <img src="/portrait-of-a-serious.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] w-full rounded-[0.25em] object-top"/>
+          <img src="/portrait-of-a-serious.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] custom-512:h-[25em] custom-412:h-[25em] w-full rounded-[0.25em] object-top"/>
 
 
 
@@ -173,7 +173,7 @@ export default function ServicesStaffCards(){
         <div className="flex items-center">
 
 
-          <img src="/happy-young.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] w-full rounded-[0.25em] md:object-top lg:object-bottom custom-853:object-center"/>
+          <img src="/happy-young.jpg" alt="" className="object-cover h-[17.5em] custom-540:h-[25em] custom-512:h-[25em] custom-412:h-[25em] w-full rounded-[0.25em] md:object-top lg:object-bottom custom-853:object-center"/>
 
 
 

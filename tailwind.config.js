@@ -81,6 +81,9 @@ module.exports = {
       'custom-820': '820px',
       'custom-768': '768px',
       'custom-412': '412px',
+      'custom-512': '512px',
+      'custom-870': '870px',
+      'custom-545': '545px',
     }
 
 
