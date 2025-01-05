@@ -98,17 +98,69 @@ export default function ServicesTeam(){
         <div className="flex flex-col border border-[#50B498] green">
 
 
-          <div className="flex items-center border border-[#50B498] green">
+          <motion.div className="flex items-center border border-[#50B498] green transition-alll duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+      
+          
+          
+          >
 
             <img src="/handsome-businessman.jpg" alt="" className="w-full h-[17.5em] object-cover "/>
 
-          </div>
+          </motion.div>
 
 
                 
 
-          <p className="text-center mt-[2em] font-roboto text-[1.125rem] not-italic font-semibold text-[#333]">Peter Harvey</p>
-          <p className="text-center text-[#CA6702] font-inter text-[0.9375rem] not-italic font-normal ">Founder Ranger</p>
+          <motion.p className="text-center mt-[2em] font-roboto text-[1.125rem] not-italic font-semibold text-[#333] transition-all duration-1000 ease-in-out"
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+      
+          
+          
+          
+          >Peter Harvey</motion.p>
+          <motion.p className="text-center text-[#CA6702] font-inter text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out"
+          
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+      
+          
+          
+          >Founder Ranger</motion.p>
 
 
         </div>
@@ -119,17 +171,67 @@ export default function ServicesTeam(){
         <div className="flex flex-col border border-[#50B498] green">
 
 
-          <div className="flex items-center border border-[#50B498] green">
+          <motion.div className="flex items-center border border-[#50B498] green transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          >
 
             <img src="/businesswoman-sitting.jpg" alt="" className="w-full h-[17.5em] object-cover object-top "/>
 
-          </div>
+          </motion.div>
 
 
 
 
-          <p className="text-center mt-[2em] font-roboto text-[1.125rem] not-italic font-semibold text-[#333]">Peter Harvey</p>
-          <p className="text-center text-[#CA6702] font-inter text-[0.9375rem] not-italic font-normal ">Founder Ranger</p>
+          <motion.p className="text-center mt-[2em] font-roboto text-[1.125rem] not-italic font-semibold text-[#333] transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Peter Harvey</motion.p>
+          <motion.p className="text-center text-[#CA6702] font-inter text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out"
+          
+          
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
+          
+          
+          
+          >Founder Ranger</motion.p>
 
 
         </div>

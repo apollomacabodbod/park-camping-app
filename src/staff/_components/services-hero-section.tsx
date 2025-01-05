@@ -71,11 +71,46 @@ export default function ServicesHeroSection(){
       </div>
 
 
-      <p className="text-white text-center font-roboto text-[4.5rem] not-italic font-bold leading-[1em]">Our Staff</p>
+      <motion.p className="text-white text-center font-roboto text-[4.5rem] not-italic font-bold leading-[1em] transition-all duration-1000 ease-in-out"
+      
+      
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 10 },
+          visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+          },
+        }}
+
+      
+      
+      >Our Staff</motion.p>
 
 
 
-      <div className="flex items-baseline justify-center gap-[1em] mt-[2em]">
+      <motion.div className="flex items-baseline justify-center gap-[1em] mt-[2em] transition-all duration-1000 ease-in-out"
+      
+      
+      
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 10 },
+          visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+          },
+        }}
+
+      
+      
+      >
 
 
         <img src="/services-home.svg" alt="" />
@@ -93,7 +128,7 @@ export default function ServicesHeroSection(){
 
 
 
-      </div>
+      </motion.div>
 
 
 
