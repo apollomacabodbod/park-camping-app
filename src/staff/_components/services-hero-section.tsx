@@ -11,7 +11,7 @@ export default function ServicesHeroSection(){
 
     <div className="z-10 flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] my-[9em] ">
 
-      <div className="flex items-baseline  gap-[0.625em] ">
+      <div className="flex items-baseline justify-center gap-[0.625em] ">
 
         <motion.img src="/home-ranger-camp.svg" alt="" width={27}  className="transition-all duration-1000 ease-in-out "
 
