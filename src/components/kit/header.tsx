@@ -49,7 +49,8 @@ export default function Header(){
 
             <div className="flex items-center justify-center">
 
-              <img src="/logo.svg" alt=""  />
+              <Link to={"/"} className="cursor-pointer"><img src="/logo.svg" alt=""  /></Link>
+              
 
             </div>
 
