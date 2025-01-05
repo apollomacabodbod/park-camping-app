@@ -69,7 +69,7 @@ const Sidebar: FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
         {/* Sidebar links */}
         {[
           { to: "/", label: "Home" },
-          { to: "/about", label: "Services" },
+          { to: "/services", label: "Services" },
           { to: "/services", label: "Camping" },
           { to: "/works", label: "About" },
           { to: "/blog", label: "Blog" },
