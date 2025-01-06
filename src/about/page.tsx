@@ -1,4 +1,4 @@
-import CampingHeroSection from "../camping/_components/camping-hero-section";
+import AboutHeroSection from "./_components/about-hero-section";
 
 export default function About() {
   return (<>
@@ -15,8 +15,7 @@ export default function About() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-[rgba(16,34,29,0.60)] opacity-80 "></div>
           
-      <CampingHeroSection/>
-          
+      <AboutHeroSection/>
           
           
           
