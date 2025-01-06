@@ -1,3 +1,4 @@
+import AboutCards from "./_components/about-cards";
 import AboutHeroSection from "./_components/about-hero-section";
 
 export default function About() {
@@ -22,6 +23,16 @@ export default function About() {
       <img src="/home-shape.svg" alt="" className="z-10"/>
           
           
+    </div>
+
+
+
+
+    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+
+      <AboutCards/>
+
+
     </div>
    
   </>)
