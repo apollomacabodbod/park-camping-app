@@ -1,3 +1,5 @@
+import CampingFeatured from "./_components/camping-featured";
+import CampingFeaturedCards from "./_components/camping-featured-cards";
 import CampingGround from "./_components/camping-ground";
 import CampingHeroSection from "./_components/camping-hero-section";
 import CampingPlaces from "./_components/camping-places";
@@ -40,6 +42,8 @@ export default function Camping(){
       <CampingPlaces/>
       <CampingPlacesCards/>
       <CampingGround/>
+      <CampingFeatured/>
+      <CampingFeaturedCards/>
 
 
     </div>
