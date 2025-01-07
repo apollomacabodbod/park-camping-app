@@ -12,7 +12,7 @@ export default function About() {
     <div className="relative flex flex-col bg-[#BDBDBD]  bg-cover bg-center transition-all duration-1000 ease-in-out "
               
       style={{
-        backgroundImage: "url('/camping-mornings.jpg')"
+        backgroundImage: "url('/friends-cooking.jpg')"
       }}
               
     >
