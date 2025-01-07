@@ -1,6 +1,7 @@
 import BlogHeroSection from "./_components/blog-hero-section";
 import BlogReadMore from "./_components/blog-read-more";
 import BlogUpdates from "./_components/blog-updates";
+import BlogUpdatesCards from "./_components/blog-updates-cards";
 
 
 
@@ -36,6 +37,7 @@ export default function Blog(){
 
       <BlogReadMore/>
       <BlogUpdates/>
+      <BlogUpdatesCards/>
 
 
     </div>
