@@ -68,14 +68,62 @@ export default function AboutCards(){
 
 
 
-        <p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal  mt-[1em]">Nullam semper etiam congue lacinia nunc, sit. Quam vel vestibulum
-    faucibus dolor non semper leo quis. Pretium quam lacus.</p>
+        <motion.p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal  mt-[1em] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        >Nullam semper etiam congue lacinia nunc, sit. Quam vel vestibulum
+    faucibus dolor non semper leo quis. Pretium quam lacus.</motion.p>
 
 
 
-        <p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal mt-[2em]">Pretium quam lacus interdum ultrices velit elementum idicul netus faucibus. Venenatis quam diam nisi id viverra dui proin quisque. Ridiculus adipiscing massa at amet, mi at auctor onec vestibulum</p>
+        <motion.p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal mt-[2em] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        >Pretium quam lacus interdum ultrices velit elementum idicul netus faucibus. Venenatis quam diam nisi id viverra dui proin quisque. Ridiculus adipiscing massa at amet, mi at auctor onec vestibulum</motion.p>
 
-        <p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal mt-[2em]">Pretium quam lacus interdum ultrices velit elementum idicul netus faucibus. Venenatis quam diam nisi id viverra dui proin quisque. Ridiculus adipiscing massa at amet, mi at auctor onec vestibulum</p>
+        <motion.p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal mt-[2em] transition-all duration-1000 ease-in-out"
+        
+        
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 10 },
+            visible: { 
+              opacity: 1, 
+              y: 0,
+              transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+            },
+          }}
+        
+        
+        
+        >Pretium quam lacus interdum ultrices velit elementum idicul netus faucibus. Venenatis quam diam nisi id viverra dui proin quisque. Ridiculus adipiscing massa at amet, mi at auctor onec vestibulum</motion.p>
 
 
 
