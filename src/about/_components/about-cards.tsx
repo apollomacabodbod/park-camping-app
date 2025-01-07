@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion"
+import AboutStatsCards from "./about-stats-cards"
 
 
 export default function AboutCards(){
@@ -45,7 +46,7 @@ export default function AboutCards(){
 
 
 
-        <motion.p className="text-[#333]  font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+        <motion.p className="text-[#333] font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
       
              
           initial="hidden"
@@ -65,7 +66,7 @@ export default function AboutCards(){
 
 
 
-        <p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal ">Nullam semper etiam congue lacinia nunc, sit. Quam vel vestibulum
+        <p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal  mt-[1em]">Nullam semper etiam congue lacinia nunc, sit. Quam vel vestibulum
     faucibus dolor non semper leo quis. Pretium quam lacus.</p>
 
 
@@ -78,7 +79,7 @@ export default function AboutCards(){
 
 
 
-        <div className="flex flex-col mt-[8em]">
+        <div className="flex flex-col mt-[8em] border border-[#50B498] green p-[4em]">
 
 
           <motion.div className="flex items-center  gap-[0.625em] transition-all duration-1000 ease-in-out"
@@ -111,10 +112,38 @@ export default function AboutCards(){
 
 
 
+          <motion.p className="text-[#333]  font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+      
+             
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 10 },
+              visible: { 
+                opacity: 1, 
+                y: 0,
+                transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+              },
+            }}
 
+
+          >Ranger State Park in Stats</motion.p>
+
+
+
+          <p className="text-[#333] font-inter text-[0.9375rem] not-italic font-normal mt-[1em]">Nullam semper etiam congue lacinia nunc, sit. Quam vel vestibulum
+faucibus dolor non semper leo quis. Pretium quam lacus.</p>
+
+
+
+          <AboutStatsCards/>
 
 
         </div>
+
+
+        
 
 
 
