@@ -6,7 +6,7 @@ export default function BlogReadMore(){
   return(<>
 
 
-    <div className="grid sm:grid-cols-2 border border-[#50B498] green mt-[4.375em]">
+    <div className="grid sm:grid-cols-2  mt-[4.375em]">
 
 
       <div className="flex flex-col">
