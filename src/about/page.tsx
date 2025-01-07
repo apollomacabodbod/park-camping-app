@@ -1,3 +1,4 @@
+import AboutActivtiesVideo from "./_components/about-activies-video";
 import AboutActivities from "./_components/about-activities";
 import AboutCampingGround from "./_components/about-camping-ground";
 import AboutCards from "./_components/about-cards";
@@ -35,6 +36,7 @@ export default function About() {
       <AboutCards/>
       <AboutCampingGround/>
       <AboutActivities/>
+      <AboutActivtiesVideo/>
 
 
     </div>
