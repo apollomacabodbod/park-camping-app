@@ -43,7 +43,7 @@ export default function BlogReadMore(){
       </div>
 
 
-      <div className="flex flex-col p-[1em] lg:p-[4em]">
+      <div className="flex flex-col p-[1em] md:p-[2em] lg:p-[4em]">
 
 
 
