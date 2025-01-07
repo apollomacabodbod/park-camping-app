@@ -1,6 +1,8 @@
 
 import { motion } from "framer-motion"
 import AboutStatsCards from "./about-stats-cards"
+import AboutRecognitionsCards from "./about-recognition-cards"
+import HomeRecognitions from "./about-recognition"
 
 
 export default function AboutCards(){
@@ -9,7 +11,7 @@ export default function AboutCards(){
   return(<>
 
 
-    <div className="grid grid-cols-2 gap-[1.875em] border border-[#50B498] green mt-[5em]" >
+    <div className="grid custom-846:grid-cols-2 gap-[1.875em] border border-[#50B498] green mt-[5em]" >
 
 
 
@@ -79,7 +81,7 @@ export default function AboutCards(){
 
 
 
-        <div className="flex flex-col mt-[8em] border border-[#50B498] green p-[4em]">
+        <div className="flex flex-col mt-[8em] border border-[#50B498] green  p-[1em]  lg:p-[2.5em] xl:p-[4em]">
 
 
           <motion.div className="flex items-center  gap-[0.625em] transition-all duration-1000 ease-in-out"
@@ -112,7 +114,7 @@ export default function AboutCards(){
 
 
 
-          <motion.p className="text-[#333]  font-roboto text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
+          <motion.p className="text-[#333]  font-roboto text-[1.8rem]  lg:text-[1.6rem] xl:text-[2.25rem] not-italic font-semibold transition-all duration-1000 ease-in-out"
       
              
             initial="hidden"
@@ -160,6 +162,19 @@ faucibus dolor non semper leo quis. Pretium quam lacus.</p>
 
 
         </div>
+
+
+
+        <div className="flex flex-col">
+
+
+          <HomeRecognitions/>
+          <AboutRecognitionsCards/>
+
+
+        </div>
+
+        
 
 
 
