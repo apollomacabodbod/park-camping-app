@@ -39,7 +39,7 @@ export default function AboutCards(){
 
           <img src="/home-places.svg" alt="" />
 
-          <p className="text-[#CA6702] leading-normal font-open-sans tracking-[0.125em] text-[0.9375rem] not-italic font-bold uppercase">Places to Go</p>
+          <p className="text-[#CA6702] leading-normal font-open-sans tracking-[0.125em] text-[0.9375rem] not-italic font-bold uppercase">about</p>
 
           <img src="/home-places.svg" alt="" />
 
@@ -153,7 +153,7 @@ export default function AboutCards(){
 
             <img src="/home-places.svg" alt="" />
 
-            <p className="text-[#CA6702] leading-normal font-open-sans tracking-[0.125em] text-[0.9375rem] not-italic font-bold uppercase">Places to Go</p>
+            <p className="text-[#CA6702] leading-normal font-open-sans tracking-[0.125em] text-[0.9375rem] not-italic font-bold uppercase">stats</p>
 
             <img src="/home-places.svg" alt="" />
 
