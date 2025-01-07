@@ -1,3 +1,4 @@
+import AboutCampingGround from "./_components/about-camping-ground";
 import AboutCards from "./_components/about-cards";
 import AboutHeroSection from "./_components/about-hero-section";
 
@@ -31,7 +32,8 @@ export default function About() {
     <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
 
       <AboutCards/>
-      
+      <AboutCampingGround/>
+
 
 
     </div>
