@@ -11,11 +11,11 @@ export default function AboutCards(){
   return(<>
 
 
-    <div className="grid custom-846:grid-cols-2 gap-[1.875em] border border-[#50B498] green mt-[5em]" >
+    <div className="grid custom-846:grid-cols-2 gap-[1.875em]  mt-[5em]" >
 
 
 
-      <div className="flex flex-col border border-[#50B498] green ">
+      <div className="flex flex-col  ">
 
 
         <motion.div className="flex items-center  gap-[0.625em] transition-all duration-1000 ease-in-out"
@@ -129,7 +129,7 @@ export default function AboutCards(){
 
 
 
-        <div className="flex flex-col mt-[8em] border border-[#50B498] green  p-[1em]  lg:p-[2.5em] xl:p-[4em]">
+        <div className="flex flex-col mt-[8em]   p-[1em]  lg:p-[2.5em] xl:p-[4em]">
 
 
           <motion.div className="flex items-center  gap-[0.625em] transition-all duration-1000 ease-in-out"
@@ -223,9 +223,9 @@ faucibus dolor non semper leo quis. Pretium quam lacus.</motion.p>
       <div className="flex flex-col">
 
 
-        <div className="flex items-center border border-[#50B498] green">
+        <div className="flex items-center ">
 
-          <motion.img src="/fun-in-camp.jpg" alt="" className="w-full h-[38.625em] border border-[#50B498] green object-cover rounded-[0.25em] transition-all duration-1000 ease-in-out"
+          <motion.img src="/fun-in-camp.jpg" alt="" className="w-full h-[38.625em]  object-cover rounded-[0.25em] transition-all duration-1000 ease-in-out"
           
                      
             initial="hidden"
