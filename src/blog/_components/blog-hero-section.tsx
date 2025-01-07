@@ -47,7 +47,7 @@ export default function BlogHeroSection(){
           }}
   
 
-        >about</motion.p>
+        >Blog</motion.p>
 
         <motion.img src="/home-ranger-camp.svg" alt="" width={27} className="transition-all duration-1000 ease-in-out"
 
@@ -88,7 +88,7 @@ export default function BlogHeroSection(){
 
       
       
-      >About Us</motion.p>
+      >Blog</motion.p>
 
 
 
@@ -123,7 +123,7 @@ export default function BlogHeroSection(){
         <img src="/services-arrow.svg" alt="" />
 
 
-        <Link to={"/services"} className="text-white font-roboto text-[0.9375rem] not-italic font-bold uppercase">About Us</Link>
+        <Link to={"/services"} className="text-white font-roboto text-[0.9375rem] not-italic font-bold uppercase">Blog</Link>
 
 
 
