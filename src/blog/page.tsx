@@ -1,4 +1,5 @@
 import BlogHeroSection from "./_components/blog-hero-section";
+import BlogReadMore from "./_components/blog-read-more";
 
 
 
@@ -26,6 +27,15 @@ export default function Blog(){
       <img src="/home-shape.svg" alt="" className="z-10"/>
               
               
+    </div>
+
+
+    <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em]">
+
+        
+      <BlogReadMore/>
+
+
     </div>
     
     
