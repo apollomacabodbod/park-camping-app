@@ -70,7 +70,7 @@ export default function Header(){
               <Link  to="/services" className="text-white  focus:text-[#F4EEA9] active:text-[#F4EEA9] font-roboto text-[0.9375rem] not-italic font-bold uppercase" > services</Link>
               <Link  to="/camping" className="text-white focus:text-[#F4EEA9] active:text-[#F4EEA9] font-roboto text-[0.9375rem] not-italic font-bold uppercase" > camping</Link>
               <Link  to="/about" className="text-white focus:text-[#F4EEA9] active:text-[#F4EEA9] font-roboto text-[0.9375rem] not-italic font-bold uppercase" > about</Link>
-              <Link  to="" className="text-white focus:text-[#F4EEA9] active:text-[#F4EEA9] font-roboto text-[0.9375rem] not-italic font-bold uppercase" > blog</Link>
+              <Link  to="/blog" className="text-white focus:text-[#F4EEA9] active:text-[#F4EEA9] font-roboto text-[0.9375rem] not-italic font-bold uppercase" > blog</Link>
               <Link  to="" className="text-white focus:text-[#F4EEA9] active:text-[#F4EEA9] font-roboto text-[0.9375rem] not-italic font-bold uppercase" > contact</Link>
 
 

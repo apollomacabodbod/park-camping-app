@@ -7,6 +7,7 @@ import ServicesStaff from "./staff/page";
 import ScrollToTop from "./components/kit/scroll-top";
 import Camping from "./camping/page";
 import About from "./about/page";
+import Blog from "./blog/page";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/services" element={<ServicesStaff />} />
         <Route path="/camping" element={<Camping />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
 
 
