@@ -1,33 +1,28 @@
-import { Button } from "src/components/button";
-import { motion } from "framer-motion";
-import { DatePickerCheckIn } from "../home/_components/home-date-checkin";
+import AboutHeroSection from "../about/_components/about-hero-section";
 
 export default function Contact() {
   return (
     <>
-      <div className="flex flex-col px-[2em] bg-orange-400">
-        <p className="">test</p>
-        <Button>Destructive</Button>
-        <motion.p
-          className="font-roboto"
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true, amount: 0.5 }}
-        >
-          demo
-        </motion.p>
+      <div className="relative flex flex-col bg-[#BDBDBD]  bg-cover bg-center transition-all duration-1000 ease-in-out "
+                    
+        style={{
+          backgroundImage: "url('/friends-cooking.jpg')"
+        }}
+                    
+      >
+                
+                
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-[rgba(16,34,29,0.60)] opacity-80 "></div>
+                
+        <AboutHeroSection/>
+                
+                
+                
+        <img src="/home-shape.svg" alt="" className="z-10"/>
+                
+                
       </div>
-
-      <div className="">
-        
-        <DatePickerCheckIn/>
-
-      </div>
-
-      
-
-      <div className="flex flex-col min-h-screen bg-red-400"></div>
     </>
   );
 }
