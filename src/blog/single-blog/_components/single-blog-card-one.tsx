@@ -102,7 +102,7 @@ export default function SingleBlogCardOne(){
         <div className="flex items-center">
 
 
-          <motion.img src="/dome-tents.jpg" alt="" className="w-full h-[21.25em] object-cover rounded-[0.125em] transition-all duration-1000 ease-in-out"
+          <motion.img src="/dome-tents.jpg" alt="" className="w-full h-[21.25em] object-cover rounded-[0.25em] transition-all duration-1000 ease-in-out"
           
             initial="hidden"
             whileInView="visible"

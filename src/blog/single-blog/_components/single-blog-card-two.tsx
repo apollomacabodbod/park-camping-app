@@ -30,7 +30,7 @@ export default function SingleBlogCardTwo(){
           }}
         
         >
-          <img src="/fun-in-camp.jpg" alt="" className="w-full h-[21.25em] object-cover rounded-[0.125em]"/>
+          <img src="/fun-in-camp.jpg" alt="" className="w-full h-[21.25em] object-cover rounded-[0.25em]"/>
         </motion.div>
 
 
