@@ -8,6 +8,7 @@ import ScrollToTop from "./components/kit/scroll-top";
 import Camping from "./camping/page";
 import About from "./about/page";
 import Blog from "./blog/page";
+import SingleBlog from "./blog/single-blog/page";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/camping" element={<Camping />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<SingleBlog />} />
       </Routes>
 
 
