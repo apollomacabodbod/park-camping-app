@@ -1,6 +1,7 @@
 import SingleBlogCardOne from "./_components/single-blog-card-one";
 import SingleBlogCardTwo from "./_components/single-blog-card-two";
 import SingleBlogCategory from "./_components/single-blog-category";
+import SingleBlogComment from "./_components/single-blog-comment";
 import SingleBlogDescription from "./_components/single-blog-description";
 import SingleBlogDetails from "./_components/single-blog-details";
 import SingleBlogHeroSection from "./_components/single-blog-hero-section";
@@ -49,6 +50,7 @@ export default function SingleBlog(){
       <SingleBlogCategory/>
       <SingleBlogUpdates/>
       <SingleBlogUpdatesCards/>
+      <SingleBlogComment/>
 
 
     </div>
