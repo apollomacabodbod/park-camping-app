@@ -112,7 +112,7 @@ export default function Header(){
 
                 <div className="flex items-center gap-[0.625em] py-[1em] px-[2em]">
 
-                  <p className="font-roboto text-[#F4EEA9] text-[0.9375rem] font-bold uppercase">Learn more</p>
+                  <p className="font-roboto text-[#F4EEA9] text-[0.9375rem] font-bold uppercase">Book now</p>
 
                   <img src="/home-learn-more.svg" alt="" width={14}/>
 
