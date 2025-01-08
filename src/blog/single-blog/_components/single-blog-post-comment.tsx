@@ -7,11 +7,15 @@ export default function SingleBlogPostComment(){
   return (<>
 
 
-    <div className="grid grid-cols-1 border border-[#50B498] green p-[2em] gap-[2em] mt-[2em]">
 
 
 
-      <div className="grid grid-cols-1">
+
+    <div className="grid grid-cols-1 border border-[#50B498] green p-[2em] gap-[2em] mt-[2em] md:mx-auto ">
+
+
+
+      <div className="grid grid-cols-1 ">
 
         <div className="flex flex-col">
 
@@ -65,7 +69,6 @@ export default function SingleBlogPostComment(){
 
 
     </div>
-    
     
     
   </>)
