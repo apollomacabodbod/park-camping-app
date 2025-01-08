@@ -5,6 +5,7 @@ import SingleBlogComment from "./_components/single-blog-comment";
 import SingleBlogDescription from "./_components/single-blog-description";
 import SingleBlogDetails from "./_components/single-blog-details";
 import SingleBlogHeroSection from "./_components/single-blog-hero-section";
+import SingleBlogPostComment from "./_components/single-blog-post-comment";
 import SingleBlogReply from "./_components/single-blog-reply";
 import SingleBlogUpdates from "./_components/single-blog-updates";
 import SingleBlogUpdatesCards from "./_components/single-blog-updates-cards";
@@ -53,6 +54,7 @@ export default function SingleBlog(){
       <SingleBlogUpdatesCards/>
       <SingleBlogComment/>
       <SingleBlogReply/>
+      <SingleBlogPostComment/>
 
 
     </div>
