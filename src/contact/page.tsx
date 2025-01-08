@@ -3,10 +3,10 @@ import ContactHeroSection from "./_components/contact-hero-section";
 export default function Contact() {
   return (
     <>
-      <div className="relative flex flex-col bg-[#BDBDBD]  bg-cover bg-center transition-all duration-1000 ease-in-out "
+      <div className="relative flex flex-col bg-[#BDBDBD]  bg-cover bg-top transition-all duration-1000 ease-in-out "
                     
         style={{
-          backgroundImage: "url('/friends-cooking.jpg')"
+          backgroundImage: "url('/camping-tent.jpg')"
         }}
                     
       >
