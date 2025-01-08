@@ -1,5 +1,6 @@
 import ContactContactUs from "./_components/contact-contact-us";
 import ContactHeroSection from "./_components/contact-hero-section";
+import ContactInfo from "./_components/contact-info";
 
 export default function Contact() {
   return (
@@ -7,7 +8,7 @@ export default function Contact() {
       <div className="relative flex flex-col bg-[#BDBDBD]  bg-cover bg-top transition-all duration-1000 ease-in-out "
                     
         style={{
-          backgroundImage: "url('/camping-tent.jpg')"
+          backgroundImage: "url('/young-support.jpg')"
         }}
                     
       >
@@ -29,6 +30,7 @@ export default function Contact() {
       <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
 
         <ContactContactUs/>
+        <ContactInfo/>
 
       </div>
 
