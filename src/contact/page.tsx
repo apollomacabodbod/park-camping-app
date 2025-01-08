@@ -1,3 +1,4 @@
+import ContactContactUs from "./_components/contact-contact-us";
 import ContactHeroSection from "./_components/contact-hero-section";
 
 export default function Contact() {
@@ -23,6 +24,15 @@ export default function Contact() {
                 
                 
       </div>
+
+
+      <div className="flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em] border border-[#50B498] green">
+
+        <ContactContactUs/>
+
+      </div>
+
+
     </>
   );
 }
