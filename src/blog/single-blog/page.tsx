@@ -1,3 +1,4 @@
+import SingleBlogCardOne from "./_components/single-blog-card-one";
 import SingleBlogDetails from "./_components/single-blog-details";
 import SingleBlogHeroSection from "./_components/single-blog-hero-section";
 
@@ -37,6 +38,7 @@ export default function SingleBlog(){
 
 
       <SingleBlogDetails/>
+      <SingleBlogCardOne/>
 
 
     </div>
