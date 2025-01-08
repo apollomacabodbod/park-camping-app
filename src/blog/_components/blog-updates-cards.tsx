@@ -1,6 +1,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
 
 export default function BlogUpdatesCards(){
 
@@ -39,123 +40,127 @@ export default function BlogUpdatesCards(){
 
          {cards.map((data) => (
 
-           <div key={data.id} className="flex flex-col ">
+           <Link to={`/blog/${data.id}`}>
+
+             <div key={data.id} className="flex flex-col ">
 
 
 
-             <motion.img src={data.image} alt="" className="h-[12.5em] object-cover rounded-[0.25em] transition-all duration-1000 ease-in-out"
+               <motion.img src={data.image} alt="" className="h-[12.5em] object-cover rounded-[0.25em] transition-all duration-1000 ease-in-out"
 
 
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, amount: 0.5 }}
-               variants={{
-                 hidden: { opacity: 0, y: 10 },
-                 visible: { 
-                   opacity: 1, 
-                   y: 0,
-                   transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                 },
-               }}
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true, amount: 0.5 }}
+                 variants={{
+                   hidden: { opacity: 0, y: 10 },
+                   visible: { 
+                     opacity: 1, 
+                     y: 0,
+                     transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                   },
+                 }}
 
 
-             />
-
-
-
-             <motion.p className="text-[rgba(16,34,29,0.60)] font-open-sans text-[0.75rem] mt-[1em] font-normal leading-normal transition-all duration-1000 ease-in-out"
-
-
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, amount: 0.5 }}
-               variants={{
-                 hidden: { opacity: 0, y: 10 },
-                 visible: { 
-                   opacity: 1, 
-                   y: 0,
-                   transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                 },
-               }}
+               />
 
 
 
-             >{data.date}</motion.p>
+               <motion.p className="text-[rgba(16,34,29,0.60)] font-open-sans text-[0.75rem] mt-[1em] font-normal leading-normal transition-all duration-1000 ease-in-out"
 
-             <motion.p className="text-[#333] font-roboto text-[1.125rem] not-italic font-semibold mt-[0.05em] transition-all duration-1000 ease-in-out"
+
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true, amount: 0.5 }}
+                 variants={{
+                   hidden: { opacity: 0, y: 10 },
+                   visible: { 
+                     opacity: 1, 
+                     y: 0,
+                     transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                   },
+                 }}
+
+
+
+               >{data.date}</motion.p>
+
+               <motion.p className="text-[#333] font-roboto text-[1.125rem] not-italic font-semibold mt-[0.05em] transition-all duration-1000 ease-in-out"
 
 
   
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, amount: 0.5 }}
-               variants={{
-                 hidden: { opacity: 0, y: 10 },
-                 visible: { 
-                   opacity: 1, 
-                   y: 0,
-                   transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                 },
-               }}
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true, amount: 0.5 }}
+                 variants={{
+                   hidden: { opacity: 0, y: 10 },
+                   visible: { 
+                     opacity: 1, 
+                     y: 0,
+                     transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                   },
+                 }}
 
 
 
-             >{data.title}</motion.p>
+               >{data.title}</motion.p>
 
 
-             <motion.p className="text-[#333] font-inter not-italic font-normal text-[0.9375rem] mt-[1em] transtion-all duration-1000 ease-in-out"
-
-
-
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, amount: 0.5 }}
-               variants={{
-                 hidden: { opacity: 0, y: 10 },
-                 visible: { 
-                   opacity: 1, 
-                   y: 0,
-                   transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                 },
-               }}
-
-
-             >{data.description}</motion.p>
+               <motion.p className="text-[#333] font-inter not-italic font-normal text-[0.9375rem] mt-[1em] transtion-all duration-1000 ease-in-out"
 
 
 
-             <motion.div className="flex items-center mt-[1em] gap-[0.625em] transition-all duration-1000 ease-in-out"
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true, amount: 0.5 }}
+                 variants={{
+                   hidden: { opacity: 0, y: 10 },
+                   visible: { 
+                     opacity: 1, 
+                     y: 0,
+                     transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                   },
+                 }}
+
+
+               >{data.description}</motion.p>
 
 
 
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, amount: 0.5 }}
-               variants={{
-                 hidden: { opacity: 0, y: 10 },
-                 visible: { 
-                   opacity: 1, 
-                   y: 0,
-                   transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
-                 },
-               }}
+               <motion.div className="flex items-center mt-[1em] gap-[0.625em] transition-all duration-1000 ease-in-out"
 
 
 
-             >
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true, amount: 0.5 }}
+                 variants={{
+                   hidden: { opacity: 0, y: 10 },
+                   visible: { 
+                     opacity: 1, 
+                     y: 0,
+                     transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+                   },
+                 }}
 
 
-               <p className="text-[#389844] font-roboto text-[0.9375rem] not-italic font-bold capitalize ">Read More</p>
 
-               <img src="/home-updates-arrow.svg" alt="" />
-
-
-             </motion.div>
+               >
 
 
-           </div>
+                 <p className="text-[#389844] font-roboto text-[0.9375rem] not-italic font-bold capitalize ">Read More</p>
+
+                 <img src="/home-updates-arrow.svg" alt="" />
 
 
+               </motion.div>
+
+
+
+
+             </div>
+
+           </Link>
 
 
 
