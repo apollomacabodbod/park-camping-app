@@ -1,4 +1,4 @@
-import AboutHeroSection from "../about/_components/about-hero-section";
+import ContactHeroSection from "./_components/contact-hero-section";
 
 export default function Contact() {
   return (
@@ -15,7 +15,7 @@ export default function Contact() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-[rgba(16,34,29,0.60)] opacity-80 "></div>
                 
-        <AboutHeroSection/>
+        <ContactHeroSection/>
                 
                 
                 
