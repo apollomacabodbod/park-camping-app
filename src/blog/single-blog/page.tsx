@@ -5,6 +5,7 @@ import SingleBlogComment from "./_components/single-blog-comment";
 import SingleBlogDescription from "./_components/single-blog-description";
 import SingleBlogDetails from "./_components/single-blog-details";
 import SingleBlogHeroSection from "./_components/single-blog-hero-section";
+import SingleBlogPostButton from "./_components/single-blog-post-button";
 import SingleBlogPostComment from "./_components/single-blog-post-comment";
 import SingleBlogReply from "./_components/single-blog-reply";
 import SingleBlogUpdates from "./_components/single-blog-updates";
@@ -55,6 +56,7 @@ export default function SingleBlog(){
       <SingleBlogComment/>
       <SingleBlogReply/>
       <SingleBlogPostComment/>
+      <SingleBlogPostButton/>
 
 
     </div>
