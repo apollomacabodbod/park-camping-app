@@ -7,10 +7,10 @@ export default function SingleBlogCardOne(){
   return(<>
 
 
-    <div className="grid sm:grid-cols-2 mt-[2em] gap-[1.875em] border border-[#50B498] green">
+    <div className="grid sm:grid-cols-2 mt-[2em] gap-[1.875em] ">
 
 
-      <div className="flex flex-col border border-[#50B498] green gap-[1em]">
+      <div className="flex flex-col  gap-[1em]">
 
 
         <motion.p className="text-[#1E334B] font-roboto text-[1.5rem] not-italic font-semibold leading-[1em] transition-all duration-1000 ease-in-out"

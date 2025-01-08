@@ -8,7 +8,7 @@ export default function SingleBlogPostButton(){
 
 
 
-    <motion.div className="flex items-center justify-center border border-[#50B498] green mb-[2em] cursor-pointer transition-all duration-1000 ease-in-out"
+    <motion.div className="flex items-center justify-center  mb-[2em] cursor-pointer transition-all duration-1000 ease-in-out"
     
     
     

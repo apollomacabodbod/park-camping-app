@@ -10,7 +10,7 @@ export default function SingleBlogCardTwo(){
     <div className="grid sm:grid-cols-2 gap-[1.875em] mt-[2em]">
 
 
-      <div className="flex flex-col border border-[#50B498] green">
+      <div className="flex flex-col ">
 
 
         <motion.div className="flex items-center transition-all duration-1000 ease-in-out"
@@ -38,7 +38,7 @@ export default function SingleBlogCardTwo(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green">
+      <div className="flex flex-col ">
 
         <motion.p className="text-[#1E334B] font-roboto text-[1.5rem] not-italic font-semibold leading-[1em] transition-all duration-1000 ease-in-out"
         

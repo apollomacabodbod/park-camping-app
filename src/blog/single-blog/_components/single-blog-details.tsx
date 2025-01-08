@@ -9,7 +9,7 @@ export default function SingleBlogDetails(){
 
 
 
-    <div className="flex flex-col mt-[4.375em] border border-[#50B498] green">
+    <div className="flex flex-col mt-[4.375em] ">
 
 
       <motion.p className="text-[#1E334B] text-roboto text-[1.5rem] not-italic font-semibold transiiton-all duration-1000 ease-in-out"

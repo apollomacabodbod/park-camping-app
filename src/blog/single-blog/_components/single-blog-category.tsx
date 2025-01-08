@@ -7,17 +7,17 @@ export default function SingleBlogCategory(){
   return(<>
 
 
-    <div className="flex flex-col border border-[#50B498] green mt-[4em]">
+    <div className="flex flex-col  mt-[4em]">
 
 
-      <div className="lg:flex lg:items-center lg:justify-between p-[1em] border border-[#50B498] green">
+      <div className="lg:flex lg:items-center lg:justify-between p-[1em] ">
 
 
 
-        <div className="flex flex-col  border border-[#50B498] green">
+        <div className="flex flex-col ">
 
 
-          <div className="sm:flex sm:items-center sm:gap-[1em] sm:border border-[#50B498] green" >
+          <div className="sm:flex sm:items-center sm:gap-[1em] " >
 
             <motion.p className="text-[#CA6702] font-roboto not-italic font-bold capitalize transition-all duration-1000 ease-in-out"
             
@@ -123,7 +123,7 @@ export default function SingleBlogCategory(){
 
         <div className="flex flex-col">
 
-          <div className="flex items-center border border-[#50B498] green gap-[1em] mt-[1em] lg:mt-[0em]">
+          <div className="flex items-center  gap-[1em] mt-[1em] lg:mt-[0em]">
 
 
 
