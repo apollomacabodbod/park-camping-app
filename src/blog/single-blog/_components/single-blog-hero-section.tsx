@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -46,10 +46,43 @@ export default function SingleBlogHeroSection(){
          <div className="z-10 flex flex-col max-w-[1200px] lg:mx-auto px-[1.25em]  my-[9em] ">
 
 
-           <p className="text-white font-montserrat text-[4.5rem] text-center not-italic font-bold max-w-[15em]">{blog?.title}</p>
+           <motion.p className="text-white font-montserrat text-[4.5rem] text-center not-italic font-bold max-w-[15em] transition-all duration-1000 ease-in-out"
+           
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ once: true, amount: 0.5 }}
+             variants={{
+               hidden: { opacity: 0, y: 10 },
+               visible: { 
+                 opacity: 1, 
+                 y: 0,
+                 transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+               },
+             }}
+           
+           
+           >{blog?.title}</motion.p>
 
 
-           <p className="text-[#F4EEA9] font-inter text-[0.9375rem] text-center not-italic font-normal ">December 30, 2021  No Comments</p>
+           <motion.p className="text-[#F4EEA9] font-inter text-[0.9375rem] text-center not-italic font-normal transition-all duration-1000 ease-in-out"
+           
+           
+           
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ once: true, amount: 0.5 }}
+             variants={{
+               hidden: { opacity: 0, y: 10 },
+               visible: { 
+                 opacity: 1, 
+                 y: 0,
+                 transition: { duration: 0, ease: "easeInOut" }, // Applying duration and easing
+               },
+             }}
+           
+           
+           
+           >December 30, 2021  No Comments</motion.p>
 
 
 
