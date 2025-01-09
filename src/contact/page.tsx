@@ -1,6 +1,7 @@
 import ContactContactUs from "./_components/contact-contact-us";
 import ContactHeroSection from "./_components/contact-hero-section";
 import ContactInfo from "./_components/contact-info";
+import ContactInfoCards from "./_components/contact-info-cards";
 
 export default function Contact() {
   return (
@@ -31,6 +32,7 @@ export default function Contact() {
 
         <ContactContactUs/>
         <ContactInfo/>
+        <ContactInfoCards/>
 
       </div>
 
