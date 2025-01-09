@@ -2,6 +2,8 @@ import ContactContactUs from "./_components/contact-contact-us";
 import ContactHeroSection from "./_components/contact-hero-section";
 import ContactInfo from "./_components/contact-info";
 import ContactInfoCards from "./_components/contact-info-cards";
+import ContactDetails from "./_components/contact-details";
+import ContactMessage from "./_components/contact-message";
 
 export default function Contact() {
   return (
@@ -33,6 +35,8 @@ export default function Contact() {
         <ContactContactUs/>
         <ContactInfo/>
         <ContactInfoCards/>
+        <ContactMessage/>
+        <ContactDetails/>
 
       </div>
 
