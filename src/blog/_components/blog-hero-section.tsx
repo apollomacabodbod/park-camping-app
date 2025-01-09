@@ -123,7 +123,7 @@ export default function BlogHeroSection(){
         <img src="/services-arrow.svg" alt="" />
 
 
-        <Link to={"/services"} className="text-white font-roboto text-[0.9375rem] not-italic font-bold uppercase">Blog</Link>
+        <Link to={"/blog"} className="text-white font-roboto text-[0.9375rem] not-italic font-bold uppercase">Blog</Link>
 
 
 
