@@ -4,6 +4,7 @@ import ContactInfo from "./_components/contact-info";
 import ContactInfoCards from "./_components/contact-info-cards";
 import ContactDetails from "./_components/contact-details";
 import ContactMessage from "./_components/contact-message";
+import ContactMessageButton from "./_components/contact-message-button";
 
 export default function Contact() {
   return (
@@ -37,6 +38,7 @@ export default function Contact() {
         <ContactInfoCards/>
         <ContactMessage/>
         <ContactDetails/>
+        <ContactMessageButton/>
 
       </div>
 
