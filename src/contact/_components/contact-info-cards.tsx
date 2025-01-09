@@ -7,11 +7,11 @@ export default function ContactInfoCards(){
 
   return(<>
 
-    <div className="grid lg:grid-cols-3 gap-[1.875em] border border-[#50B498] green lg:px-[5.625em] lg:relative lg:top-[-5.375em]">
+    <div className="grid lg:grid-cols-3 gap-[1.875em]  lg:px-[5.625em] lg:relative lg:top-[-5.375em]">
 
 
 
-      <div className="flex flex-col border border-[#50B498] green p-[2em] bg-white rounded-[0.25em] mt-[1.875em] lg:mt-[0em]" >
+      <div className="flex flex-col  p-[2em] bg-white rounded-[0.25em] mt-[1.875em] lg:mt-[0em]" >
 
 
         <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
@@ -80,7 +80,7 @@ export default function ContactInfoCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green p-[2em] bg-white rounded-[0.25em]" >
+      <div className="flex flex-col  p-[2em] bg-white rounded-[0.25em]" >
 
 
         <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"
@@ -154,7 +154,7 @@ export default function ContactInfoCards(){
 
 
 
-      <div className="flex flex-col border border-[#50B498] green p-[2em] bg-white rounded-[0.25em]" >
+      <div className="flex flex-col  p-[2em] bg-white rounded-[0.25em]" >
 
 
         <motion.div className="flex items-center justify-center transition-all duration-1000 ease-in-out"

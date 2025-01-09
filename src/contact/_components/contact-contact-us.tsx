@@ -8,7 +8,7 @@ export default function ContactContactUs(){
   return (<>
 
 
-    <div className="flex flex-col mt-[4.5em] border border-[#50B498] green">
+    <div className="flex flex-col mt-[4.5em] ">
 
 
       <motion.div className="flex items-center justify-center gap-[0.625em] transition-all duration-1000 ease-in-out"

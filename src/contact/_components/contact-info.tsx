@@ -10,7 +10,7 @@ export default function ContactInfo(){
     <div className="flex flex-col mt-[4em]">
 
 
-      <div className="flex items-center border border-[#50B498] green">
+      <div className="flex items-center">
 
 
         <motion.img src="/camping-in.jpg" alt="" className="w-full h-[28.125em] object-cover rounded-[0.25em] transition-all duration-1000 ease-in-out "
