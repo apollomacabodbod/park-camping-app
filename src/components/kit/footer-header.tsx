@@ -8,20 +8,10 @@ export default function FooterHeader(){
 
 
 
-  const [scrolling, setScrolling] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   
   
   
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolling = window.scrollY > 0;
-      setScrolling(isScrolling);
-    };
-  
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
 
 
