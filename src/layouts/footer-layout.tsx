@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import CustomHeader from "../components/kit/CustomHeader";
+import FooterHeader from "../components/kit/footer-header";
 
 
 
@@ -8,7 +8,7 @@ export default function FooterLayout(){
 
   return(<>
 
-    <CustomHeader/>
+    <FooterHeader/>
     <Outlet />
     
     

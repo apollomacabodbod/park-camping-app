@@ -4,7 +4,7 @@ import Sidebar from "./side-bar-menu";
 
 
 
-export default function CustomHeader(){
+export default function FooterHeader(){
 
 
 
