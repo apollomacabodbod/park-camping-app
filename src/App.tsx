@@ -11,6 +11,9 @@ import Blog from "./blog/page";
 import SingleBlog from "./blog/single-blog/page";
 import { useEffect } from "react";
 import Contact from "./contact/page";
+import MainLayout from "./layouts/main-layout";
+import FooterLayout from "./layouts/footer-layout";
+import NotFound from "./components/kit/not-found";
 
 function App() {
 
@@ -29,24 +32,36 @@ function App() {
       <ScrollToTop/>
 
 
-      <Header/>
+    
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<ServicesStaff />} />
-        <Route path="/camping" element={<Camping />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<SingleBlog />} />
-        <Route path="/contact" element={<Contact />} />
+
+        <Route element={<MainLayout />}>
+        
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesStaff />} />
+          <Route path="/camping" element={<Camping />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<SingleBlog />} />
+          <Route path="/contact" element={<Contact />} />
+
+        </Route>
+
+        <Route element={<FooterLayout />}>
+
+          <Route path="*" element={<NotFound />}/>
+
+        </Route>
+
+        
+        
       </Routes>
 
-
       <div key={location.pathname}>
-
         <Footer/>
-        
       </div>
+     
 
        
 
