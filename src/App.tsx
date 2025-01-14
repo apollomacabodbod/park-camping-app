@@ -19,9 +19,6 @@ function App() {
 
   const location = useLocation(); // Now safe to use because it's inside a Router
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
 
   return (
 
