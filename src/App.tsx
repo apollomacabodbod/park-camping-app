@@ -8,7 +8,6 @@ import Camping from "./camping/page";
 import About from "./about/page";
 import Blog from "./blog/page";
 import SingleBlog from "./blog/single-blog/page";
-import { useEffect } from "react";
 import Contact from "./contact/page";
 import MainLayout from "./layouts/main-layout";
 import FooterLayout from "./layouts/footer-layout";
