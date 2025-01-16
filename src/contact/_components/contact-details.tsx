@@ -21,7 +21,7 @@ export default function ContactDetails(){
 
         <div className="flex flex-col">
 
-          <motion.input type="text" className="outline-none border-b-2 border-[rgba(16,34,29,0.60)] py-[1em] text-[rgba(16,34,29,0.60)] font-roboto text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out " placeholder="Your Name"
+          <motion.input type="text" className="outline-none rounded-[0em] border-b-2 border-[rgba(16,34,29,0.60)] py-[1em] text-[rgba(16,34,29,0.60)] font-roboto text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out " placeholder="Your Name"
   
   
   
@@ -45,7 +45,7 @@ export default function ContactDetails(){
 
         <div className="flex flex-col">
 
-          <motion.input type="text" className="outline-none border-b-2 border-[rgba(16,34,29,0.60)] py-[1em] text-[rgba(16,34,29,0.60)] font-roboto text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out" placeholder="Email Address"
+          <motion.input type="text" className="outline-none rounded-[0em] border-b-2 border-[rgba(16,34,29,0.60)] py-[1em] text-[rgba(16,34,29,0.60)] font-roboto text-[0.9375rem] not-italic font-normal transition-all duration-1000 ease-in-out" placeholder="Email Address"
   
   
   
@@ -82,7 +82,7 @@ export default function ContactDetails(){
         <div className="flex flex-col">
 
 
-          <motion.textarea name="" id="" className="outline-none border-b-2 border-[rgba(16,34,29,0.60)] pt-[1em] pb-[4em] text-[rgba(16,34,29,0.60)] font-roboto text-[0.9375rem] not-italic font-normal resize-none transition-all duration-1000 ease-in-out" placeholder="Messages"
+          <motion.textarea name="" id="" className="outline-none rounded-[0em] border-b-2 border-[rgba(16,34,29,0.60)] pt-[1em] pb-[4em] text-[rgba(16,34,29,0.60)] font-roboto text-[0.9375rem] not-italic font-normal resize-none transition-all duration-1000 ease-in-out" placeholder="Messages"
           
           
           
