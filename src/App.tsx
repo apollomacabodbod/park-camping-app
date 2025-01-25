@@ -11,6 +11,7 @@ import Contact from "./contact/page";
 import MainLayout from "./layouts/main-layout";
 import FooterLayout from "./layouts/footer-layout";
 import NotFound from "./components/kit/not-found";
+import ScrollToTop from "./components/kit/scroll-top";
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
 
     <LenisProvider>
 
-     
+      <ScrollToTop/>
      
 
     
