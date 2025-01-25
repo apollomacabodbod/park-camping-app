@@ -22,14 +22,17 @@ function App() {
   return (
 
 
+
     <LenisProvider>
 
-      <ScrollToTop/>
-
+     
+     
 
     
 
       <Routes>
+
+     
 
         <Route element={<MainLayout />}>
         
