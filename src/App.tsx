@@ -1,6 +1,6 @@
 import {  Routes, Route , useLocation} from "react-router-dom";
 import Home from "./home/page";
-import { LenisProvider } from "./context/smooth-scroll";
+import { LenisProvider, useLenis } from "./context/smooth-scroll";
 import Footer from "./components/kit/footer";
 import ServicesStaff from "./staff/page";
 import Camping from "./camping/page";
@@ -18,6 +18,7 @@ function App() {
   const location = useLocation(); // Now safe to use because it's inside a Router
 
 
+
   return (
 
 
@@ -28,11 +29,10 @@ function App() {
      
 
     
-
+    
       <Routes>
 
      
-
         <Route element={<MainLayout />}>
         
           <Route path="/" element={<Home />} />
@@ -44,7 +44,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
         </Route>
-
         <Route element={<FooterLayout />}>
 
           <Route path="*" element={<NotFound />}/>
@@ -54,6 +53,10 @@ function App() {
         
         
       </Routes>
+
+   
+
+
 
       <div key={location.pathname}>
         <Footer/>

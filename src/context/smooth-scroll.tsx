@@ -24,11 +24,14 @@ export const LenisProvider = ({ children }: { children: React.ReactNode }) => {
     requestAnimationFrame(raf);
 
     return () => lenis.destroy();
-  }, []);
+  }, [location]);
 
+  // Scroll to top whenever the route changes
   useEffect(() => {
-    // Scroll to the top on route change
-    lenisRef.current?.scrollTo(0, { immediate: true });
+    if (lenisRef.current) {
+      // Use the correct scrollTo method with a single object argument
+      lenisRef.current.scrollTo(0, { duration: 0});
+    }
   }, [location]);
 
   return (
