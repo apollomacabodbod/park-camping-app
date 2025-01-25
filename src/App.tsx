@@ -3,7 +3,6 @@ import Home from "./home/page";
 import { LenisProvider } from "./context/smooth-scroll";
 import Footer from "./components/kit/footer";
 import ServicesStaff from "./staff/page";
-import ScrollToTop from "./components/kit/scroll-top";
 import Camping from "./camping/page";
 import About from "./about/page";
 import Blog from "./blog/page";
