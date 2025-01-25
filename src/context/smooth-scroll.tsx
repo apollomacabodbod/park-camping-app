@@ -28,7 +28,6 @@ export const LenisProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     // Scroll to the top on route change
-    window.scrollTo(0, 0);
     lenisRef.current?.scrollTo(0, { immediate: true });
   }, [location]);
 
