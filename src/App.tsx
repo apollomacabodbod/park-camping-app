@@ -1,6 +1,6 @@
 import {  Routes, Route , useLocation} from "react-router-dom";
 import Home from "./home/page";
-import { LenisProvider, useLenis } from "./context/smooth-scroll";
+import { LenisProvider} from "./context/smooth-scroll";
 import Footer from "./components/kit/footer";
 import ServicesStaff from "./staff/page";
 import Camping from "./camping/page";
