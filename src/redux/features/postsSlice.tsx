@@ -11,18 +11,18 @@ export type Post = {
 type PostsState = {
   posts: Post[];
   loading: boolean;
-  error: string | null;
+  error: boolean
 };
 
 // Initial state
 const initialState: PostsState = {
   posts: [],
   loading: false,
-  error: null,
+  error: false,
 };
 
 // Async thunk for fetching posts
-export const fetchPosts = createAsyncThunk<Post[], void>(
+export const fetchPosts = createAsyncThunk(
   "posts/fetchPosts",
   async () => {
     const response = await fetch(
@@ -46,9 +46,9 @@ const postsSlice = createSlice({
         state.loading = false;
         state.posts = action.payload;
       })
-      .addCase(fetchPosts.rejected, (state, action) => {
+      .addCase(fetchPosts.rejected, (state) => {
         state.loading = false;
-        state.error = action.error.message || "Failed to fetch posts" || null;
+        state.error = true;
       });
       
 
