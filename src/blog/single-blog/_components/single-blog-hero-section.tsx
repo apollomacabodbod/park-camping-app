@@ -34,7 +34,7 @@ export default function SingleBlogHeroSection(){
        )
 
 
-       const { posts, loading, error } = useSelector((state: RootState) => state.posts);
+       const { posts } = useSelector((state: RootState) => state.posts);
 
 
        const { id } = useParams()
