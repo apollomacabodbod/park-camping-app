@@ -17,21 +17,21 @@ export default function SingleBlogHeroSection(){
        }
   
   
-       const [cards] = useState<data[]>(
-         [
-           { id: 1, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorem", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-2023.jpg" },
-           { id: 2, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia loren", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-with-red.jpg" },
-           { id: 3, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorex", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-mornings.jpg" },
-           { id: 4, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorev", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/family-camping.jpg" },
-           { id: 5, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lored", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/friends-cooking.jpg" },
-           { id: 6, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia loreq", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/friends-having.jpg" },
-           { id: 7, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia loreh", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourist-camp.jpg" },
-           { id: 8, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorej", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourist-couple.jpg" },
-           { id: 9, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorei", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourists-go.jpg" },
+       //  const [cards] = useState<data[]>(
+       //    [
+       //      { id: 1, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorem", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-2023.jpg" },
+       //      { id: 2, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia loren", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-with-red.jpg" },
+       //      { id: 3, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorex", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-mornings.jpg" },
+       //      { id: 4, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorev", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/family-camping.jpg" },
+       //      { id: 5, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lored", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/friends-cooking.jpg" },
+       //      { id: 6, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia loreq", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/friends-having.jpg" },
+       //      { id: 7, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia loreh", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourist-camp.jpg" },
+       //      { id: 8, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorej", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourist-couple.jpg" },
+       //      { id: 9, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia lorei", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourists-go.jpg" },
       
       
-         ]
-       )
+       //    ]
+       //  )
 
 
        const { posts } = useSelector((state: RootState) => state.posts);
