@@ -11,7 +11,7 @@ export default function BlogUpdatesCards(){
 
 
   const dispatch = useDispatch<AppDispatch>();
-  const { posts, loading, error } = useSelector((state: RootState) => state.posts);
+  const { posts, loading, error } = useSelector((state: RootState) => state.posts) ;
 
 
   useEffect(() => {
@@ -25,13 +25,16 @@ export default function BlogUpdatesCards(){
   return (<>
 
 
+
+
+
     <div className="grid grid-cols-1 sm:grid-cols-3 mt-[3.989375em] gap-[1.875em] mb-[4.6175em]">
 
       {posts.map((data) => (
 
-        <Link to={`/blog/${data.id}`}>
+        <Link key={data.id} to={`/blog/${data.id}`}>
 
-          <div key={data.id} className="flex flex-col ">
+          <div  className="flex flex-col ">
 
 
 
