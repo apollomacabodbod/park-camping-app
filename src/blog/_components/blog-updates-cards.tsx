@@ -2,21 +2,13 @@
 import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState, AppDispatch } from "@/src/redux/store";
-import { fetchPosts } from "src/redux/features/postsSlice";
+import { useSelector } from "react-redux";
+import { RootState } from "@/src/redux/store";
 
 export default function BlogUpdatesCards(){
 
 
-
-  const dispatch = useDispatch<AppDispatch>();
   const { posts, loading, error } = useSelector((state: RootState) => state.posts) ;
-
-
-  useEffect(() => {
-    dispatch(fetchPosts());
-  }, [dispatch]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error</p>;

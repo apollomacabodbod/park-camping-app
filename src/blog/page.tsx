@@ -1,11 +1,22 @@
+import { useEffect } from "react";
 import BlogHeroSection from "./_components/blog-hero-section";
 import BlogReadMore from "./_components/blog-read-more";
 import BlogUpdates from "./_components/blog-updates";
 import BlogUpdatesCards from "./_components/blog-updates-cards";
-
-
+import { fetchPosts } from "../redux/features/postsSlice";
+import { AppDispatch } from "@/src/redux/store";
+import { useDispatch } from "react-redux";
 
 export default function Blog(){
+
+
+  const dispatch = useDispatch<AppDispatch>();
+  
+
+  useEffect(() => {
+    dispatch(fetchPosts());
+  }, [dispatch]);
+
 
 
   return (<>
