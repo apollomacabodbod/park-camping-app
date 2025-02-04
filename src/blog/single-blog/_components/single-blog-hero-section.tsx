@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { RootState } from "@/src/redux/store";
 
 export default function SingleBlogHeroSection(){
 
@@ -32,13 +34,14 @@ export default function SingleBlogHeroSection(){
        )
 
 
+       const { posts, loading, error } = useSelector((state: RootState) => state.posts);
+
+
        const { id } = useParams()
        const blogId = Number(id); // Convert to a number for comparison
 
-       const blog = cards.find((blog) => blog.id === blogId ) 
+       const blog = posts.find((blog) => blog.id === blogId ) 
 
-
-      
 
        return(<>
 
