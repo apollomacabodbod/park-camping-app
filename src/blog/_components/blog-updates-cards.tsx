@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
