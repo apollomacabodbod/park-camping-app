@@ -1,12 +1,15 @@
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState, AppDispatch } from "@/src/redux/store";
+import { fetchPosts } from "src/redux/features/postsSlice";
 
 export default function BlogUpdatesCards(){
 
 
-     type data = {
+     type Post = {
         id : number;
         date: string;
         title: string;
@@ -15,21 +18,35 @@ export default function BlogUpdatesCards(){
      }
 
 
-     const [cards] = useState<data[]>(
-       [
-         { id: 1, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-2023.jpg" },
-         { id: 2, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-with-red.jpg" },
-         { id: 3, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-mornings.jpg" },
-         { id: 4, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/family-camping.jpg" },
-         { id: 5, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/friends-cooking.jpg" },
-         { id: 6, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/friends-having.jpg" },
-         { id: 7, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourist-camp.jpg" },
-         { id: 8, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourist-couple.jpg" },
-         { id: 9, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourists-go.jpg" },
+     //  const [cards] = useState<data[]>(
+     //    [
+     //      { id: 1, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-2023.jpg" },
+     //      { id: 2, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-with-red.jpg" },
+     //      { id: 3, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/camping-mornings.jpg" },
+     //      { id: 4, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/family-camping.jpg" },
+     //      { id: 5, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/friends-cooking.jpg" },
+     //      { id: 6, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/friends-having.jpg" },
+     //      { id: 7, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourist-camp.jpg" },
+     //      { id: 8, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourist-couple.jpg" },
+     //      { id: 9, date: "December 30, 2021  No Comments", title: "Nullam semper etiam congue lacinia", description: "Nullam semper etiam congue lacinia nuncesit quam vel vestibulum faucibus dolor semper.", image: "/tourists-go.jpg" },
     
     
-       ]
-     )
+     //    ]
+     //  )
+
+
+     const dispatch = useDispatch<AppDispatch>();
+     const { posts, loading, error }: { posts: Post[]; loading: boolean; error: string | null } = useSelector((state: RootState) => state.posts);
+
+
+     useEffect(() => {
+       dispatch(fetchPosts());
+     }, [dispatch]);
+
+     if (loading) return <p>Loading...</p>;
+     if (error) return <p>Error: {error}</p>;
+
+
     
 
 
@@ -38,7 +55,7 @@ export default function BlogUpdatesCards(){
 
        <div className="grid grid-cols-1 sm:grid-cols-3 mt-[3.989375em] gap-[1.875em] mb-[4.6175em]">
 
-         {cards.map((data) => (
+         {posts.map((data) => (
 
            <Link to={`/blog/${data.id}`}>
 

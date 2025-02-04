@@ -2,6 +2,8 @@ import { useSelector, TypedUseSelectorHook } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 // import globalReducer from "@/redux/features/globalSlice";
 // import coinMarketReducer from "@/redux/features/coinMarketSlice";
+import postsReducer from "./features/postsSlice";
+
 
 export const store = configureStore({
 //   reducer: {
@@ -9,7 +11,10 @@ export const store = configureStore({
 //     coinMarketData: coinMarketReducer,
 //   },
 
-  reducer: {}, // Add your reducers here
+  reducer: {
+
+    posts: postsReducer,
+  }, // Add your reducers here
 
 });
 
