@@ -15,7 +15,7 @@ const BlogDetails = () => {
 
   useEffect(() => {
     dispatch(fetchBlogUpdates(blogId)); // Pass ID to Redux
-  },[dispatch, id]);
+  },[dispatch, blogId]);
 
   if (status === 'loading') return <p>Loading...</p>;
   if (status === 'failed') return <p>Error: {error}</p>;
