@@ -1,56 +1,71 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { RootState } from '../store'; // Adjust based on your store setup
+import { createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 
-// Define the API response type
-interface BlogUpdate {
+// Define the Post type
+export type Post = {
   id: number;
   date: string;
   title: string;
   description: string;
   image: string;
-}
+};
 
-interface BlogState {
-  data: BlogUpdate[];
-  status: 'idle' | 'loading' | 'succeeded' | 'failed';
+// Define the state type
+type PostsState = {
+  posts: Post[];
+  loading: boolean;
   error: string | null;
-}
+};
 
-const initialState: BlogState = {
-  data: [],
-  status: 'idle',
+// Initial state
+const initialState: PostsState = {
+  posts: [], // This will be hydrated by Redux Persist
+  loading: false,
   error: null,
 };
 
-// Async thunk to fetch data based on an ID parameter
-export const fetchBlogUpdates = createAsyncThunk(
-  'blog/fetchUpdates',
-  async (id: number) => {
-    const response = await fetch(`https://faux-api.com/api/v1/blogupdates_8415773995269211/${id}`);
-    const json = await response.json();
-    return json.result;
+// Async thunk for fetching posts
+export const fetchPosts = createAsyncThunk(
+  "posts/fetchPosts",
+  async (id: number, { rejectWithValue }) => {
+   
+    try {
+      const response = await fetch(
+        `https://faux-api.com/api/v1/blogupdates_8415773995269211/${id}`
+      );
+
+      const data = await response.json();
+      return data.result;
+
+    } catch (error) {
+      return rejectWithValue("Failed to fetch posts, using cached data.");
+    }
+
+
   }
 );
 
-const blogSlice = createSlice({
-  name: 'blog',
+const postsSlice = createSlice({
+  name: "posts",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchBlogUpdates.pending, (state) => {
-        state.status = 'loading';
+      .addCase(fetchPosts.pending, (state) => {
+        state.loading = true;
       })
-      .addCase(fetchBlogUpdates.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.data = action.payload;
+      .addCase(fetchPosts.fulfilled, (state, action) => {
+        state.loading = false;
+        state.posts = action.payload; // Save fetched data
+        state.error = null;
       })
-      .addCase(fetchBlogUpdates.rejected, (state, action) => {
-        state.status = 'failed';
-        state.error = action.error.message || 'Failed to fetch data';
+      .addCase(fetchPosts.rejected, (state, action) => {
+        state.loading = false;
+        if (state.posts.length === 0) {
+          state.error = action.payload as string; // Only store error if no cached data
+        }
       });
+      
   },
 });
 
-export default blogSlice.reducer;
-export const selectBlogUpdates = (state: RootState) => state.blog;
+export default postsSlice.reducer;
