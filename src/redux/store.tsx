@@ -3,20 +3,20 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import postsReducer from "./features/postsSlice";
-import blogReducer from "./features/single-blog";
+import BlogReducer from "./features/blog-slice";
+import SingleblogReducer from "./features/single-blog-slice";
 
 // Persist Config with Whitelist
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["posts","blog"], // Only persist these slices
+  whitelist: [], // Only persist these slices
   // whitelist: ["posts"], // Only persist these slices
 };
 
 const rootReducer = combineReducers({
-  posts: postsReducer,   // ✅ Persists all posts
-  blog: blogReducer,
+  posts: BlogReducer,   // ✅ Persists all posts
+  blog: SingleblogReducer,
 });
 
 // Persisted Reducer

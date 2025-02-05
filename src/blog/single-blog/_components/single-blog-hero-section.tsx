@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { fetchBlogUpdates, selectBlogUpdates } from 'src/redux/features/single-blog';
+import { fetchBlogUpdates, selectBlogUpdates } from 'src/redux/features/single-blog-slice';
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import type { AppDispatch } from 'src/redux/store';
