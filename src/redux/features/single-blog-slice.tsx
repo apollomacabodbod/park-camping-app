@@ -23,15 +23,23 @@ const initialState: PostsState = {
   error: null,
 };
 
+export const fetchPosts = createAsyncThunk(
+  "posts/fetchPosts",
+  async (id: number, { rejectWithValue }) => {
+   
+    try {
+      const response = await fetch(
+        `https://faux-api.com/api/v1/blogupdates_8415773995269211/${id}`
+      );
+
+      const data = await response.json();
+      return data.result;
+
+    } catch (error) {
+      return rejectWithValue("Failed to fetch posts, using cached data.");
+    }
 
 
-// Async thunk to fetch data based on an ID parameter
-export const fetchPosts  = createAsyncThunk(
-  'posts/fetchPosts',
-  async (id: number) => {
-    const response = await fetch(`https://faux-api.com/api/v1/blogupdates_8415773995269211/${id}`);
-    const json = await response.json();
-    return json.result;
   }
 );
 
