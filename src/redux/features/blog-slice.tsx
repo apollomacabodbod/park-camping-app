@@ -29,7 +29,7 @@ const initialState: PostsState = {
 export const fetchPosts  = createAsyncThunk(
   'posts/fetchPosts',
   async () => {
-    const response = await fetch(`https://faux-api.com/api/v1/blogupdates_8415773995269211/`);
+    const response = await fetch(`${process.env.REACT_APP_API_URL}`);
     const json = await response.json();
     return json.result;
   }
