@@ -9,7 +9,7 @@ import postsReducer from "./features/postsSlice";
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: [], // Only persist these slices
+  whitelist: ["posts"], // Only persist these slices
   // whitelist: ["posts"], // Only persist these slices
 };
 
